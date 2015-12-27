@@ -1,0 +1,24 @@
+mcc -W 'dotnet:Graph,Graph,0.0,private' -d 'D:\Graph\src' -T 'link:lib' -v 'class{Graph:D:\Graph2D.m}'  
+Compiler version: 4.10 (R2009a)  
+Processing include files... 
+2 item(s) added. 
+Processing directories installed with MCR... 
+The file D:\Graph\src\mccExcludedFiles.log contains a list of functions excluded from the CTF archive. 
+2 item(s) added. 
+Generating MATLAB path for the compiled application... 
+Created 40 path items. 
+Begin validation of MEX files: Sat Dec 05 14:16:34 2015  
+End validation of MEX files: Sat Dec 05 14:16:34 2015  
+Parsing file "D:\Graph2D.m" 
+	(Referenced from: "Compiler Command Line").  
+Parsing file "C:\Program Files\MATLAB\R2009a\toolbox\compiler\deploy\deployprint.m" 
+	(Referenced from: "Compiler Command Line").  
+Parsing file "C:\Program Files\MATLAB\R2009a\toolbox\compiler\deploy\printdlg.m" 
+	(Referenced from: "Compiler Command Line").  
+Deleting 0 temporary MEX authorization files.  
+Generating file "D:\Graph\src\Graph.cs".  
+Generating file "D:\Graph\src\GraphNative.cs".  
+Generating file "D:\Graph\src\readme.txt".  
+Generating file "D:\Graph\src\dotnet_mcc_component_data.cs".  
+Executing command: C:\Windows\Microsoft.NET\Framework64\v2.0.50727\csc.exe /nologo /optimize /doc:"D:\Graph\src\Graph.xml" /t:library /r:"C:\Program Files\MATLAB\R2009a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\Graph\src\Graph.ctf" /out:"D:\Graph\src\Graph.dll" "D:\Graph\src\Graph.cs" "D:\Graph\src\dotnet_mcc_component_data.cs"  
+Executing command: C:\Windows\Microsoft.NET\Framework64\v2.0.50727\csc.exe /nologo /optimize /doc:"D:\Graph\src\GraphNative.xml" /t:library /r:"C:\Program Files\MATLAB\R2009a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\Graph\src\Graph.ctf" /out:"D:\Graph\src\GraphNative.dll" "D:\Graph\src\GraphNative.cs" "D:\Graph\src\dotnet_mcc_component_data.cs"  
