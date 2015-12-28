@@ -100,7 +100,36 @@ namespace LibDL.Learning
                 }
             }
         }
+        public double[][][] GetLayerIO(double[][][] batches)
+        {
+            if (network.Layers.Length == 0)
+                return batches;
 
+            var outputBatches = new double[batches.Length][][];
+
+            for (int j = 0; j < batches.Length; j++)
+            {
+                int batchSize = batches[j].Length;
+
+                double[][] inputs = batches[j];
+                double[][] outputs = new double[batchSize][];
+
+                outputBatches[j] = inputs;
+            }
+
+            return outputBatches;
+        }
+
+        public double RunEpoch(double[][][] batchesIn, double[][][] batchesOut)
+        {
+
+            // Learn the layer using data
+            double error = 0;
+            for (int i = 0; i < batchesIn.Length; i++)
+                error += this.RunEpoch(batchesIn[i], batchesOut[i]);
+
+            return error;
+        }
         /// <summary>
         /// Runs learning iteration.
         /// </summary>

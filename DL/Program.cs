@@ -23,6 +23,10 @@ namespace DL
     class Program
     {
         public static TimeSpan procTime = new TimeSpan();
+        public static string NETWORK="";
+        public static DBN DBNNet;
+        public static NeuralNetwork NNet;
+        public static List<double> errCostFunc = new List<double>();
         static void Main(string[] args)
         {
             //var x = new double[100];
@@ -49,7 +53,7 @@ namespace DL
             if (devMode)
             {
                 Console.WriteLine("Harap tunggu sebentar");
-                data.LoadData(@"D:\train300.csv", true, true);
+                data.LoadData(@"D:\train300.csv", true, false);
                 data.Save(@"D:\train300sign.bin");
             }
             else
@@ -67,7 +71,7 @@ namespace DL
                 menu = int.Parse(Console.ReadLine());
                 if (menu == 1)
                 {
-                    file = @"D:\data_mnist_train.bin";
+                    file = @"D:\train300.bin";
                 }
                 else if (menu == 2)
                 {
@@ -99,7 +103,7 @@ namespace DL
                 Console.Write("Simpan model dengan nama: ");
                 fileModelSimpan = Console.ReadLine();
                 TimeSpan begin = Process.GetCurrentProcess().TotalProcessorTime;
-                List<double> errCostFunc = new List<double>();
+                
 
                 //RBM mc = new RBM(inputs.First().Length, 200);
                 //RBM mc2 = new RBM(200, 200);
@@ -162,105 +166,79 @@ namespace DL
 
                 //TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
 
-                RBM mc = new RBM(inputs.First().Length, 100);
-                RBM mc2 = new RBM(100, 100);
-                RBM mc21 = new RBM(100, 10);
-                RBM mc3 = new RBM(10, outputs.First().Length);
-                DBN network = new DBN(inputs.First().Length, mc, mc2, mc21, mc3);
+                //RBM mc = new RBM(inputs.First().Length, 100);
+                //RBM mc2 = new RBM(100, 100);
+                //RBM mc21 = new RBM(100, 10);
+                //RBM mc3 = new RBM(10, outputs.First().Length);
+                //DBN network = new DBN(inputs.First().Length, 100, 100, 10);
 
 
-                DBNLearning teacher = new DBNLearning(network)
-                {
-                    LearningRate = 0.1,
-                    Momentum = 0.5,
-                    WeightDecay = 0.001,
-                };
-                teacher.CreateCD();
+                //DBNLearning teacher = new DBNLearning(network)
+                //{
+                //    LearningRate = 0.1,
+                //    Momentum = 0.5,
+                //    WeightDecay = 0.001,
+                //};
+                //teacher.CreateCD();
 
 
-                //learn 5000 iterations
-                //Setup batches of input for learning.
-                int batchCount = Math.Max(1, inputs.Length / 100);
-                // Create mini-batches to speed learning.
-                int[] groups = Accord.Statistics.Tools.RandomGroups(inputs.Length, batchCount);
-                double[][][] batches = inputs.Subgroups(groups);
-                // Learning data for the specified layer.
-                double[][][] layerData;
+                ////learn 5000 iterations
+                ////Setup batches of input for learning.
+                //int batchCount = Math.Max(1, inputs.Length / 100);
+                //// Create mini-batches to speed learning.
+                //int[] groups = Random(inputs.Length, batchCount);
+                //double[][][] batches = inputs.Subgroups(groups);
+                //// Learning data for the specified layer.
+                //double[][][] layerData;
 
-                var cd = teacher.GetLayerAlgorithm(teacher.LayerIndex);
+                //var cd = teacher.GetLayerAlgorithm(teacher.LayerIndex);
 
-                // Unsupervised learning on each hidden layer, except for the output layer.
-                for (int layerIndex = 0; layerIndex < network.StackedRBM.Count - 1; layerIndex++)
-                {
-                    teacher.LayerIndex = layerIndex;
-                    layerData = teacher.GetLayerInput(batches);
-                    for (int i = 0; i < 200; i++)
-                    {
-                        double error = teacher.RunEpoch(layerData) / inputs.Length;
-                        errCostFunc.Add(error);
-                        if (i % 10 == 0)
-                        {
-                            Console.WriteLine(i + ", Error = " + error);
+                //// Unsupervised learning on each hidden layer, except for the output layer.
+                //for (int layerIndex = 0; layerIndex < network.StackedRBM.Count - 1; layerIndex++)
+                //{
+                //    teacher.LayerIndex = layerIndex;
+                //    layerData = teacher.GetLayerInput(batches);
+                //    for (int i = 0; i < 200; i++)
+                //    {
+                //        double error = teacher.RunEpoch(layerData) / inputs.Length;
+                //        errCostFunc.Add(error);
+                //        if (i % 10 == 0)
+                //        {
+                //            Console.WriteLine(i + ", Error = " + error);
 
-                        }
-                    }
-                }
+                //        }
+                //    }
+                //}
 
-                network.UpdateVisibleWeights();
-                network.Save(@fileModelSimpan);
+                //network.UpdateVisibleWeights();
+                //network.Save(@fileModelSimpan);
 
-                //DBN network = DBN.Load(@"D:\embuh");
-                ////var teacher3 = new ResilientBackPropagationFineTuning(network);
-                var teacher3 = new Backpropagation(network)
-                {
-                    LearningRate = 0.5,
-                    Momentum = 0.05,
-                };
-
-
-                //learn 5000 iterations
-                //Setup batches of input for learning.
-                int batchCountBP = Math.Max(1, inputs.Length / 1000);
-                // Create mini-batches to speed learning.
-                int[] groupsBP = Random(inputs.Length, batchCountBP);
-                double[][][] batchesIn = inputs.Subgroups(groupsBP);
-                double[][][] batchesOut = outputs.Subgroups(groupsBP);
-                // Learning data for the specified layer.
-                double[][][] layerDataBPIn;
-                double[][][] layerDataBPOut;
-                layerDataBPIn = teacher3.GetLayerIO(batchesIn);
-                layerDataBPOut = teacher3.GetLayerIO(batchesOut);
-
-
-                for (int i = 0; i < 1000; i++)
-                {
-                    double error = teacher3.RunEpoch(inputs, outputs) / inputs.Length;
-                    errCostFunc.Add(error);
-                    if (i % 10 == 0)
-                    {
-                        Console.WriteLine(i + ", Error = " + error);
-
-                    }
-                }
-
-                TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
-
-                //NeuralNetwork network = new NeuralNetwork(false,
-                //    new LibDL.ActivationFunction.SigmoidFunction(0.001),
-                //    inputs.First().Length, // two inputs in the network
-                //    200, // two neurons in the first layer
-                //    200,
-                //    10); // one neuron in the second layer
-                //// create teacher
-                //var teacher3 = new BackpropTest(network)
+                ////DBN network = DBN.Load(@"D:\embuh");
+                //////var teacher3 = new ResilientBackPropagationFineTuning(network);
+                //var teacher3 = new Backpropagation(network)
                 //{
                 //    LearningRate = 0.5,
                 //    Momentum = 0.5,
-                //};// loop
+                //};
 
-                //for (int i = 0; i < 5000; i++)
+
+                ////learn 5000 iterations
+                ////Setup batches of input for learning.
+                //int batchCountBP = Math.Max(1, inputs.Length / 100);
+                //// Create mini-batches to speed learning.
+                //int[] groupsBP = Random(inputs.Length, batchCountBP);
+                //double[][][] batchesIn = inputs.Subgroups(groupsBP);
+                //double[][][] batchesOut = outputs.Subgroups(groupsBP);
+                //// Learning data for the specified layer.
+                //double[][][] layerDataBPIn;
+                //double[][][] layerDataBPOut;
+                //layerDataBPIn = teacher3.GetLayerIO(batchesIn);
+                //layerDataBPOut = teacher3.GetLayerIO(batchesOut);
+
+
+                //for (int i = 0; i < 1000; i++)
                 //{
-                //    double error = teacher3.RunEpoch(inputs, outputs) / inputs.Length;
+                //    double error = teacher3.RunEpoch(layerDataBPIn, layerDataBPOut) / layerDataBPIn.Length;
                 //    errCostFunc.Add(error);
                 //    if (i % 10 == 0)
                 //    {
@@ -269,7 +247,42 @@ namespace DL
                 //    }
                 //}
 
-                //TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
+               // NeuralNetwork network = new NeuralNetwork(
+               //     new LibDL.ActivationFunction.SigmoidFunction(0.01),
+               //     inputs.First().Length, // two inputs in the network
+               //     200,// two neurons in the first layer
+               //     10); // one neuron in the second layer
+               // // create teacher
+               // network.Randomize();
+               // var teacher3 = new ResilientBackPropagationFineTuning(network);
+
+
+               // //learn 5000 iterations
+               // //Setup batches of input for learning.
+               // int batchCountBP = Math.Max(1, inputs.Length / 100);
+               // // Create mini-batches to speed learning.
+               // int[] groupsBP = Random(inputs.Length, batchCountBP);
+               // double[][][] batchesIn = inputs.Subgroups(groupsBP);
+               // double[][][] batchesOut = outputs.Subgroups(groupsBP);
+               // // Learning data for the specified layer.
+               // double[][][] layerDataBPIn;
+               // double[][][] layerDataBPOut;
+               //// layerDataBPIn = teacher3.GetLayerIO(batchesIn);
+               //// layerDataBPOut = teacher3.GetLayerIO(batchesOut);
+
+
+               // for (int i = 0; i < 60; i++)
+               // {
+               //     double error = (teacher3.RunEpoch(inputs, outputs) / inputs.Length);
+               //     errCostFunc.Add(error);
+               //     if (i % 10 == 0)
+               //     {
+               //         Console.WriteLine(i + ", Error = " + error);
+
+               //     }
+               // }
+
+               // TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
 
                 //network.setTimeLearn((end - begin).TotalMilliseconds + " ms.");
                 //network.setAllErrCost(errCostFunc);
@@ -374,18 +387,87 @@ namespace DL
                 //    }
                 //}
 
-                
-                //network.setTimeLearn((end - begin).TotalMilliseconds + " ms.");
-                //network.setAllErrCost(errCostFunc);
+                Console.WriteLine("Apakah ingin membuat jaringan DBN-DNN? (true=iya/false=tidak-ANN biasa)");
+                bool isDBN = bool.Parse(Console.ReadLine());
+                Console.WriteLine("Apakah ingin mematikan komputer saat selesai training?  (true=iya/false=tidak))");
+                bool isSD= bool.Parse(Console.ReadLine());
+                if (isDBN)
+                {
+                    Console.WriteLine("Isikan parameter DBN-DNN berikut");
+                    Console.WriteLine("======Fase Pretraining====");
+                    Console.Write("Masukkan Epoch=");
+                    int epoch = int.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Ukuran Mini Batch=");
+                    int mb = int.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Learning rate=");
+                    double lr = double.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Momentum=");
+                    double mm = double.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Weight Decay=");
+                    double dc = double.Parse(Console.ReadLine());
+                    Console.WriteLine("======Fase Training atau Fine Tuning====");
+                    Console.Write("Masukkan Epoch=");
+                    int epoch2 = int.Parse(Console.ReadLine());
+                    Console.Write("Pilih true untuk RProp dan false untuk Backprop=");
+                    bool isRprop = bool.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Ukuran Mini Batch=");
+                    int mb2 = int.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Learning rate=");
+                    double lr2 = double.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Momentum=");
+                    double mm2 = double.Parse(Console.ReadLine());
 
-                
-                network.Save(@fileModelSimpan+"final");
-                CreateLogValidation(network, inputs, outputs, data, false);
+                    CreateNetwork(inputs.First().Length, outputs.First().Length);
+                    //PreTraining(DBNNet, inputs, epoch, mb, 0.1, 0.5, 0.001, fileModelSimpan);
+                    PreTraining(DBNNet, inputs, epoch, mb, lr, mm, dc, fileModelSimpan);
+                    //Training(DBNNet, inputs, outputs, epoch2, 100, 0.5, 0.5, fileModelSimpan, false);
 
-                //var psi = new ProcessStartInfo("shutdown", "/s /t 0");
-                //psi.CreateNoWindow = true;
-                //psi.UseShellExecute = false;
-                //Process.Start(psi);
+                    //DBNNet = DBN.Load(@"D:\B1\DBN74810010010BPpretraining");
+                    //DBNNet.SetActivationFunction(new LibDL.ActivationFunction.SigmoidFunction(0.01));
+                    Training(DBNNet, inputs, outputs, epoch2, mb2, lr2, mm2, fileModelSimpan, isRprop);
+
+                    TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
+
+                    DBNNet.setTimeLearn((end - begin).TotalMilliseconds + " ms.");
+                    DBNNet.setAllErrCost(errCostFunc);
+                    DBNNet.Save(@fileModelSimpan + "final");
+                    CreateLogValidation(DBNNet, inputs, outputs, data, false);
+
+                }
+                else
+                {
+                    Console.WriteLine("======Fase Training ANN DNN/MLP====");
+                    Console.Write("Masukkan Epoch=");
+                    int epoch2 = int.Parse(Console.ReadLine());
+                    Console.Write("Pilih true untuk RProp dan false untuk Backprop=");
+                    bool isRprop = bool.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Ukuran Mini Batch=");
+                    int mb2 = int.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Learning rate=");
+                    double lr2 = double.Parse(Console.ReadLine());
+                    Console.Write("Masukkan Momentum=");
+                    double mm2 = double.Parse(Console.ReadLine());
+
+                    CreateNetwork(inputs.First().Length, outputs.First().Length);
+                    Training(NNet, inputs, outputs, epoch2, mb2, lr2, mm2, fileModelSimpan, isRprop);
+
+                    TimeSpan end = Process.GetCurrentProcess().TotalProcessorTime;
+
+                    NNet.setTimeLearn((end - begin).TotalMilliseconds + " ms.");
+                    NNet.setAllErrCost(errCostFunc);
+                    NNet.Save(@fileModelSimpan + "final");
+                    CreateLogValidation(NNet, inputs, outputs, data, false);
+                }
+
+                if(isSD)
+                {
+                    var psi = new ProcessStartInfo("shutdown", "/s /t 0");
+                    psi.CreateNoWindow = true;
+                    psi.UseShellExecute = false;
+                    Process.Start(psi);
+                }
+                Console.WriteLine("======LEARNING SELESAI>> ENTER UNTUK KELUAR====");
+                Console.ReadLine();
             }
             else
             {
@@ -539,7 +621,7 @@ namespace DL
             int cou = 0;
             for (int i = 0; i < outputs.Length; i++)
             {
-                expected[i] = data.ClassOutput(network.ZeroOutput(network.Compute(inputs[i])), outputs.First().Length);
+                expected[i] = data.ClassOutput(network.Compute(inputs[i]), outputs.First().Length);
                 if (isHuruf)
                 {
                     if (expected[i] == 26)
@@ -641,6 +723,180 @@ namespace DL
             return idx;
         }
 
+        public static void CreateNetwork(int inputLayer,int outputLayer,bool isDBN=true)
+        {
+            if(isDBN)
+            {
+                Console.WriteLine("Konfigurasi DBN-DNN");
+
+                Console.Write("Pilih 2 jika dua hidden layer atau 3 jika 3 hidden layer= ");
+                int hl = int.Parse(Console.ReadLine());
+                DBN network;
+                if (hl == 2)
+                {
+                    Console.Write("Berapa banyak hidden layer-1? ");
+                    int hl1 = int.Parse(Console.ReadLine());
+                    Console.Write("Berapa banyak hidden layer-2? ");
+                    int hl2 = int.Parse(Console.ReadLine());
+                    network = new DBN(inputLayer, hl1, hl2, outputLayer);
+                    NETWORK = NETWORK+"DBN-" + inputLayer.ToString() + hl1.ToString() + hl2.ToString()+outputLayer.ToString();
+                }
+                else
+                {
+                    Console.Write("Berapa banyak hidden layer-1? ");
+                    int hl1 = int.Parse(Console.ReadLine());
+                    Console.Write("Berapa banyak hidden layer-2? ");
+                    int hl2 = int.Parse(Console.ReadLine());
+                    Console.Write("Berapa banyak hidden layer-3? ");
+                    int hl3 = int.Parse(Console.ReadLine());
+                    network = new DBN(inputLayer, hl1, hl2, hl3, outputLayer);
+                    NETWORK = NETWORK + "DBN-" + inputLayer.ToString() + hl1.ToString() + hl2.ToString() + hl3.ToString() + outputLayer.ToString();
+                }
+                DBNNet = network;            
+            }
+            else
+            {
+                Console.WriteLine("Konfigurasi ANN");
+
+                Console.Write("Pilih 2 jika dua hidden layer atau 3 jika 3 hidden layer= ");
+                int hl = int.Parse(Console.ReadLine());
+                NeuralNetwork network;
+                if (hl == 2)
+                {
+                    Console.Write("Berapa banyak hidden layer-1? ");
+                    int hl1 = int.Parse(Console.ReadLine());
+                    Console.Write("Berapa banyak hidden layer-2? ");
+                    int hl2 = int.Parse(Console.ReadLine());
+                    network = new NeuralNetwork(
+                    new LibDL.ActivationFunction.SigmoidFunction(0.01),
+                    inputLayer, 
+                    hl1, 
+                    hl2,
+                    outputLayer); 
+                    NETWORK = NETWORK + "ANN-" + inputLayer.ToString() + hl1.ToString() + hl2.ToString() + outputLayer.ToString();
+                }
+                else
+                {
+                    Console.Write("Berapa banyak hidden layer-1? ");
+                    int hl1 = int.Parse(Console.ReadLine());
+                    Console.Write("Berapa banyak hidden layer-2? ");
+                    int hl2 = int.Parse(Console.ReadLine());
+                    Console.Write("Berapa banyak hidden layer-3? ");
+                    int hl3 = int.Parse(Console.ReadLine());
+                    network = new NeuralNetwork(
+                    new LibDL.ActivationFunction.SigmoidFunction(0.01),
+                    inputLayer,
+                    hl1,
+                    hl2,
+                    hl3,
+                    outputLayer); 
+                    NETWORK = NETWORK + "ANN-" + inputLayer.ToString() + hl1.ToString() + hl2.ToString() + hl3.ToString() + outputLayer.ToString();
+                }
+                NNet = network;           
+            }
+        }
+
+        public static void PreTraining(DBN network, double[][] inputs, int epoch, int batchSize, double lr,double mm,double dc,string @fileModelSimpan)
+        {
+            Console.WriteLine("==========PRE-TRAINING IN PROGRESS================");
+            
+            DBNLearning teacher = new DBNLearning(network)
+            {
+                LearningRate = lr,//0.1,
+                Momentum = mm,//0.5,
+                WeightDecay = dc,//0.001,
+            };
+            teacher.CreateCD();
+
+
+            //learn 5000 iterations
+            //Setup batches of input for learning.
+            int batchCount = Math.Max(1, inputs.Length / batchSize);
+            // Create mini-batches to speed learning.
+            int[] groups = Random(inputs.Length, batchCount);
+            double[][][] batches = inputs.Subgroups(groups);
+            // Learning data for the specified layer.
+            double[][][] layerData;
+
+            var cd = teacher.GetLayerAlgorithm(teacher.LayerIndex);
+
+            // Unsupervised learning on each hidden layer, except for the output layer.
+            for (int layerIndex = 0; layerIndex < network.StackedRBM.Count - 1; layerIndex++)
+            {
+                teacher.LayerIndex = layerIndex;
+                layerData = teacher.GetLayerInput(batches);
+                for (int i = 0; i < epoch; i++)
+                {
+                    double error = teacher.RunEpoch(layerData) / inputs.Length;
+                    errCostFunc.Add(error);
+                    if (i % 10 == 0)
+                    {
+                        Console.WriteLine(i + ", Error = " + error);
+
+                    }
+                }
+                network.Save(@fileModelSimpan+"RBM_"+(layerIndex+1));
+            }
+
+            network.UpdateVisibleWeights();
+            
+        }
+
+        public static void Training(NeuralNetwork network, double[][] inputs, double[][] outputs,int epoch, int batchSize, double lr, double mm, string @fileModelSimpan, bool useRprop = true)
+        {
+            Console.WriteLine("==========TRAINING IN PROGRESS================");
+            network.SetActivationFunction(new LibDL.ActivationFunction.SigmoidFunction(0.01));
+            if(useRprop)
+            {
+                var teacher3 = new ResilientBackPropagationFineTuning(network);
+
+                for (int i = 0; i < epoch/*200*/; i++)
+                {
+                    double error = teacher3.RunEpoch(inputs, outputs) / inputs.Length;
+                    errCostFunc.Add(error);
+                    if (i % 10 == 0)
+                    {
+                        Console.WriteLine(i + ", Error = " + error);
+
+                    }
+                }
+            }
+            else
+            {
+                var teacher3 = new Backpropagation(network)
+                {
+                    LearningRate = lr,//0.5,
+                    Momentum = mm,//0.5,
+                };
+
+
+                //learn 5000 iterations
+                //Setup batches of input for learning.
+                int batchCountBP = Math.Max(1, inputs.Length / batchSize);
+                // Create mini-batches to speed learning.
+                int[] groupsBP = Random(inputs.Length, batchCountBP);
+                double[][][] batchesIn = inputs.Subgroups(groupsBP);
+                double[][][] batchesOut = outputs.Subgroups(groupsBP);
+                // Learning data for the specified layer.
+                double[][][] layerDataBPIn;
+                double[][][] layerDataBPOut;
+                layerDataBPIn = teacher3.GetLayerIO(batchesIn);
+                layerDataBPOut = teacher3.GetLayerIO(batchesOut);
+
+
+                for (int i = 0; i < epoch/*1000*/; i++)
+                {
+                    double error = (teacher3.RunEpoch(layerDataBPIn, layerDataBPOut) / layerDataBPIn.Length)/batchSize;
+                    errCostFunc.Add(error);
+                    if (i % 10 == 0)
+                    {
+                        Console.WriteLine(i + ", Error = " + error);
+
+                    }
+                }
+            }
+            network.Save(@fileModelSimpan + "FINAL");
+        }
         
     }
 }

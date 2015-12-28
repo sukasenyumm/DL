@@ -90,13 +90,13 @@ namespace LibDL.Utils
         {
             // index of largest value
             int bigIndex = 0;
-            double biggestVal = vector[0];
+            double biggestVal = Math.Round(vector[0]);
             
             for (int i = 1; i < vector.Length; ++i)
             {
-                if (vector[i] > biggestVal)
+                if ( Math.Round(vector[i]) > biggestVal)
                 {
-                    biggestVal = vector[i];
+                    biggestVal =  Math.Round(vector[i]);
                     bigIndex = i;
                 }
             }
@@ -104,6 +104,7 @@ namespace LibDL.Utils
         }
         public int ClassOutput(double[] output,int nClasses)
         {
+            //return output.ToList().IndexOf(output.Max());
             return nClasses-MaxIndex(output);
         }
       

@@ -125,7 +125,6 @@
     <Compile Include="ActivationFunction\GaussianDistribution.cs" />
     <Compile Include="ActivationFunction\SigmoidFunction.cs" />
     <Compile Include="DBN.cs" />
-    <Compile Include="GaussianWeights.cs" />
     <Compile Include="Interface\IActivationFunction.cs" />
     <Compile Include="Interface\INeuralNetwork.cs" />
     <Compile Include="Interface\INeuron.cs" />
