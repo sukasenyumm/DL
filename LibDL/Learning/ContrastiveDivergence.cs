@@ -34,8 +34,7 @@ namespace LibDL.Learning
             set { weightDecay = value; }
         }
         //step pada gibbs sampling
-        private int steps = 1;
-
+        
         //parameter untuk membentuk bobot pada gradien dan membentuk output product dari positive gradien dan negative gradien
         //yang dihasilkan dari visible dan hidden unit
         private double[][] weightsGradient;
@@ -193,20 +192,6 @@ namespace LibDL.Learning
 #if DEBUG_RECONSTRUCTED
                     Data.reconstruct.Add(reconstruction);
 #endif
-                    if (steps > 1)
-                    {
-                        // Perform Gibbs sampling
-                        double[] current = probability;
-                        for (int k = 0; k < steps - 1; k++)
-                        {
-                            for (int j = 0; j < probability.Length; j++)
-                                probability[j] = hidden.Neurons[j].Compute(current);
-                            for (int j = 0; j < reconstruction.Length; j++)
-                                reconstruction[j] = visible.Neurons[j].Compute(probability);
-                            current = reconstruction;
-                        }
-                    }
-
 
                     // 3. Compute outputs for the reconstruction. The network
                     //    is now being driven by reconstructions, so we should
@@ -288,9 +273,7 @@ namespace LibDL.Learning
             double rate = learningRate;
 
             // Assume all neurons in the layer have the same act function
-            if (visible.Neurons[0].ActivationFunction is GaussianDistribution)
-                rate = learningRate / (100 * input.Length);
-            else rate = learningRate / (input.Length);
+            rate = learningRate / (input.Length);
 
 
             // 5. Compute gradient descent updates

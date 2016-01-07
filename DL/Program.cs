@@ -444,7 +444,7 @@ namespace DL
                     int hl1 = int.Parse(Console.ReadLine());
                     Console.Write("Berapa banyak hidden layer-2? ");
                     int hl2 = int.Parse(Console.ReadLine());
-                    network = new DBN(new BernoulliDistribution(0.01),inputLayer, hl1, hl2, outputLayer);
+                    network = new DBN(new BernoulliDistribution(0.1),inputLayer, hl1, hl2, outputLayer);
                 }
                 else
                 {
@@ -454,7 +454,7 @@ namespace DL
                     int hl2 = int.Parse(Console.ReadLine());
                     Console.Write("Berapa banyak hidden layer-3? ");
                     int hl3 = int.Parse(Console.ReadLine());
-                    network = new DBN(new BernoulliDistribution(0.01),inputLayer, hl1, hl2, hl3, outputLayer);
+                    network = new DBN(new BernoulliDistribution(0.1),inputLayer, hl1, hl2, hl3, outputLayer);
                 }
                 DBNNet = network;            
             }
@@ -472,7 +472,7 @@ namespace DL
                     Console.Write("Berapa banyak hidden layer-2? ");
                     int hl2 = int.Parse(Console.ReadLine());
                     network = new NeuralNetwork(
-                    new LibDL.ActivationFunction.SigmoidFunction(0.01),
+                    new LibDL.ActivationFunction.SigmoidFunction(0.1),
                     inputLayer, 
                     hl1, 
                     hl2,
@@ -487,7 +487,7 @@ namespace DL
                     Console.Write("Berapa banyak hidden layer-3? ");
                     int hl3 = int.Parse(Console.ReadLine());
                     network = new NeuralNetwork(
-                    new LibDL.ActivationFunction.SigmoidFunction(0.01),
+                    new LibDL.ActivationFunction.SigmoidFunction(0.1),
                     inputLayer,
                     hl1,
                     hl2,

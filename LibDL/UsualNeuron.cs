@@ -13,26 +13,6 @@ namespace LibDL
         {
             get { return outUsual; }
         }
-
-        /*
-         * Deklarasi fungsi aktifasi
-         */
-        private new IActivationFunction function;
-        public IActivationFunction ActivationFunction
-        {
-            get { return function; }
-            set { base.function = this.function = value; }
-        }
-
-        /*
-         * Inisialiasi neuron dari input yang masuk
-         */
-        protected double threshold = 0.0;
-        public double Threshold
-        {
-            get { return threshold; }
-            set { threshold = value; }
-        }
         public UsualNeuron(int inputs, IActivationFunction function)
             : base(inputs,function)
         {

@@ -206,8 +206,7 @@ namespace LibDL.Utils
                             }
                             inputs.Add(arrInp);
                             outputs.Add(arrOut);
-                        }
-                        
+                        }           
                      
                     }
 
@@ -221,25 +220,14 @@ namespace LibDL.Utils
             }
         }
 
-        /// <summary>
-        ///   Saves the network to a stream.
-        /// </summary>
-        /// 
-        /// <param name="stream">The stream to which the network is to be serialized.</param>
-        /// 
-        public new void Save(Stream stream)
+
+        public void Save(Stream stream)
         {
             BinaryFormatter b = new BinaryFormatter();
             b.Serialize(stream, this);
         }
 
-        /// <summary>
-        ///   Saves the network to a stream.
-        /// </summary>
-        /// 
-        /// <param name="path">The file path to which the network is to be serialized.</param>
-        /// 
-        public new void Save(string path)
+        public void Save(string path)
         {
             //base.Save(@"D:\dataNN.bin");
             using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None))
@@ -248,29 +236,14 @@ namespace LibDL.Utils
             }
         }
 
-        /// <summary>
-        ///   Loads a network from a stream.
-        /// </summary>
-        /// 
-        /// <param name="stream">The network from which the machine is to be deserialized.</param>
-        /// 
-        /// <returns>The deserialized network.</returns>
-        /// 
-        public static new ReadCSVData Load(Stream stream)
+        public static ReadCSVData Load(Stream stream)
         {
             BinaryFormatter b = new BinaryFormatter();
             return (ReadCSVData)b.Deserialize(stream);
         }
 
-        /// <summary>
-        ///   Loads a network from a file.
-        /// </summary>
-        /// 
-        /// <param name="path">The path to the file from which the network is to be deserialized.</param>
-        /// 
-        /// <returns>The deserialized network.</returns>
-        /// 
-        public static new ReadCSVData Load(string path)
+       
+        public static ReadCSVData Load(string path)
         {
             using (FileStream fs = new FileStream(path, FileMode.Open))
             {

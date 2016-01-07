@@ -67,7 +67,7 @@ namespace LibDL
          * 
          * Compute: fungs untuk 
          */ 
-        public double[] Compute(double[] input)
+        public override double[] Compute(double[] input)
         {
 
             return hidden.Compute(input);
@@ -92,18 +92,6 @@ namespace LibDL
             return visible.Generate(output);
         }
 
-        /* digunakan untuk inisialisasi bernoulli-bernoulli RBM pada DBN
-         * 
-         */ 
-        public static RBM CreateBernoulliBernoulli(int inputsCount, int hiddenNeurons)
-        {
-            RBM network = new RBM(inputsCount, hiddenNeurons);
-
-            foreach (var neuron in network.Visible.Neurons)
-                neuron.ActivationFunction = new BernoulliDistribution();
-
-            return network;
-        }
         public void UpdateVisibleWeights()
         {
             Visible.CopyReversedWeightsFrom(Hidden);

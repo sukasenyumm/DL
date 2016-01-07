@@ -31,7 +31,7 @@ namespace LibDL
         }
 
         private new List<double> errCost;
-        private string timeLearn;
+        private new string timeLearn;
         /*
          * Konstruktor dimana pembentukan RBM ada didalam class DBN
          */
@@ -58,35 +58,10 @@ namespace LibDL
                 ));
             }
 
-            //override Layer from base
-            //slayers = new StochasticNetworkLayer[stackedRBM.Count];
-            //for (int i = 0; i < slayers.Length; i++)
-            //    slayers[i] = stackedRBM[i].Hidden;
-
             layers = new NetworkLayer[stackedRBM.Count];
             for (int i = 0; i < layers.Length; i++)
                 layers[i] = stackedRBM[i].Hidden;
         }
-
-        /*
-         * Konstruktor dimana pembentukan RBM ada diluar class DBN
-         */ 
-        public DBN(int inputCount, params RBM[] RBMlayers)
-            : base(null, inputCount, new int[RBMlayers.Length])
-        {
-            stackedRBM = new List<RBM>(RBMlayers);
-
-            ////override Layer from base
-            //base.slayers = new StochasticNetworkLayer[stackedRBM.Count];
-            //for (int i = 0; i < RBMlayers.Length; i++)
-            //    base.slayers[i] = stackedRBM[i].Hidden;
-
-            // Override AForge layers
-            base.layers = new NetworkLayer[stackedRBM.Count];
-            for (int i = 0; i < layers.Length; i++)
-                base.layers[i] = stackedRBM[i].Hidden;
-        }
-
         /*
          * Dapatkan output dari setiap RBM yang ditumpuk dari suatu nilai input
          * p(v_i = 1)=\sigma*(\Sigma(h_j*w_ij)*bias)
@@ -103,7 +78,7 @@ namespace LibDL
             return output;
         }
 
-        public double[] ZeroOutput(double[] output)
+        public new double[] ZeroOutput(double[] output)
         {
             double[] outp=output;
             for(int i=0;i<output.Length;i++)
@@ -175,45 +150,33 @@ namespace LibDL
                 machine.UpdateVisibleWeights();
         }
 
-        public void setAllErrCost(List<double> allcosterr)
+        public new void setAllErrCost(List<double> allcosterr)
         {
             errCost = new List<double>();
             errCost = allcosterr;
         }
 
-        public List<double> getAllErrCost()
+        public new List<double> getAllErrCost()
         {
             return errCost;
         }
 
-        public void setTimeLearn(string time)
+        public new void setTimeLearn(string time)
         {
             timeLearn = time;
         }
 
-        public string getTimeLearn()
+        public new string getTimeLearn()
         {
             return timeLearn;
         }
 
-        /// <summary>
-        ///   Saves the network to a stream.
-        /// </summary>
-        /// 
-        /// <param name="stream">The stream to which the network is to be serialized.</param>
-        /// 
         public new void Save(Stream stream)
         {
             BinaryFormatter b = new BinaryFormatter();
             b.Serialize(stream, this);
         }
 
-        /// <summary>
-        ///   Saves the network to a stream.
-        /// </summary>
-        /// 
-        /// <param name="path">The file path to which the network is to be serialized.</param>
-        /// 
         public new void Save(string path)
         {
             //base.Save(@"D:\dataNN.bin");
@@ -223,29 +186,13 @@ namespace LibDL
             }
         }
 
-        /// <summary>
-        ///   Loads a network from a stream.
-        /// </summary>
-        /// 
-        /// <param name="stream">The network from which the machine is to be deserialized.</param>
-        /// 
-        /// <returns>The deserialized network.</returns>
-        /// 
-        public static new DBN Load(Stream stream)
+          public static new DBN Load(Stream stream)
         {
             BinaryFormatter b = new BinaryFormatter();
             return (DBN)b.Deserialize(stream);
         }
 
-        /// <summary>
-        ///   Loads a network from a file.
-        /// </summary>
-        /// 
-        /// <param name="path">The path to the file from which the network is to be deserialized.</param>
-        /// 
-        /// <returns>The deserialized network.</returns>
-        /// 
-        public static new DBN Load(string path)
+       public static new DBN Load(string path)
         {
             using (FileStream fs = new FileStream(path, FileMode.Open))
             {

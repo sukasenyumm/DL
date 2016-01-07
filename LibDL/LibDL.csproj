@@ -122,14 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivationFunction\BernoulliDistribution.cs" />
-    <Compile Include="ActivationFunction\GaussianDistribution.cs" />
     <Compile Include="ActivationFunction\SigmoidFunction.cs" />
     <Compile Include="DBN.cs" />
     <Compile Include="Interface\IActivationFunction.cs" />
     <Compile Include="Interface\INeuralNetwork.cs" />
     <Compile Include="Interface\INeuron.cs" />
     <Compile Include="Learning\Backpropagation.cs" />
-    <Compile Include="Learning\BackpropTest.cs" />
     <Compile Include="Learning\ContrastiveDivergence.cs" />
     <Compile Include="Learning\DBNLearning.cs" />
     <Compile Include="Learning\ResilientBackPropagationFineTuning.cs" />

@@ -14,19 +14,6 @@ namespace LibDL
             get { return outStochastic; }
         }
 
-        /*
-         * Deklarasi fungsi aktifasi
-         */
-        private new IActivationFunction function;
-        public IActivationFunction ActivationFunction
-        {
-            get { return function; }
-            set { base.function = this.function = value; }
-        }
-
-        /*
-         * Inisialiasi neuron dari input yang masuk
-         */ 
         
         public StochasticNeuron(int inputs, IActivationFunction function)
             : base(inputs, function)
