@@ -30,11 +30,11 @@ namespace LibDL
             }
         }
 
-        public List<double> errCost;
-        public string timeLearn;
+        private new List<double> errCost;
+        private string timeLearn;
         /*
          * Konstruktor dimana pembentukan RBM ada didalam class DBN
-         */ 
+         */
         public DBN(int inputCount, params int[] hiddenNeurons) 
             : this(new BernoulliDistribution(alpha: 1), inputCount, hiddenNeurons) { }
 

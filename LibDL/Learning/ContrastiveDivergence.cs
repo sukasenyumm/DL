@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define DEBUG_RECONSTRUCTED
+#undef DEBUG_RECONSTRUCTED
+using System;
 using LibDL.Interface;
 using LibDL.Utils;
 using System.Threading;
@@ -53,6 +55,10 @@ namespace LibDL.Learning
         private StochasticNetworkLayer visible;
 
         private ThreadLocal<ParallelStorage> storage;
+
+#if DEBUG_RECONSTRUCTED
+        public ReconstructImage Data = new ReconstructImage();
+#endif
         public ContrastiveDivergence(RBM network)
         {
             init(network.Hidden, network.Visible);
@@ -127,7 +133,9 @@ namespace LibDL.Learning
 
             // update the network
             UpdateNetwork();
-
+#if DEBUG_RECONSTRUCTED
+            Data.Save(@"D:\reconstruct");
+#endif
             return error;
         }
 
@@ -182,7 +190,9 @@ namespace LibDL.Learning
                     for (int j = 0; j < visible.Neurons.Length; j++)
                         reconstruction[j] = visible.Neurons[j].Compute(activations);
 
-
+#if DEBUG_RECONSTRUCTED
+                    Data.reconstruct.Add(reconstruction);
+#endif
                     if (steps > 1)
                     {
                         // Perform Gibbs sampling
