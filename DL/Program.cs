@@ -170,6 +170,7 @@ namespace DL
 
                     CreateNetwork(inputs.First().Length, outputs.First().Length,false);
                     Training(NNet, inputs, outputs, epoch2, mb2, lr2, mm2, fileModelSimpan, isRprop);
+                    begin = begin + " End-T: " + DateTime.Now.ToLongTimeString();
 
                     NNet.setTimeLearn(begin);
                     NNet.setAllErrCost(errCostFunc);
