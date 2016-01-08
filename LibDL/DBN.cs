@@ -78,23 +78,6 @@ namespace LibDL
             return output;
         }
 
-        public new double[] ZeroOutput(double[] output)
-        {
-            double[] outp=output;
-            for(int i=0;i<output.Length;i++)
-            {
-                if(output[i]>0.5 && output[i]<=1.0)
-                {
-                    output[i] = 1.0;
-                }
-                else
-                {
-                    output[i] = 0.0;
-                }
-            }
-            return outp;
-        }
-
         /*
          * Dapatkan output dari setiap RBM yang ditumpuk tetapi pada
          * batasan tumpukan layer tertentu (range) dari suatu nilai input

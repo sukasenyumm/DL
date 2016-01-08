@@ -61,13 +61,13 @@ namespace DL
                     Console.WriteLine("Ketikkan direktori file model: ");
                     fileModel = @Console.ReadLine();
                 }
-             
-                Console.WriteLine("Pilih menu berikut: \n1. Data MNIST TRAINING 784\n2. Data HURUF\n3. Data MNIST TRAINING 400");
+
+                Console.WriteLine("Pilih menu berikut: \n1. Data MNIST TRAINING 784\n2. Data HURUF\n3. Data MNIST TRAINING 400\n4. Data MNIST TESTING\n5. Data MNIST TESTING 400");
                 Console.Write("Pilih Menu: ");
                 menu = int.Parse(Console.ReadLine());
                 if (menu == 1)
                 {
-                    file = @"D:\train300.bin";
+                    file = @"D:\data_mnist_train.bin";
                 }
                 else if (menu == 2)
                 {
@@ -77,19 +77,27 @@ namespace DL
                 {
                     file = @"D:\data_mnist_train.bin"; //for test just
                 }
+                else if (menu == 4)
+                {
+                    file = @"D:\data_mnist_test.bin";
+                }
+                else if (menu == 5)
+                {
+                    file = @"D:\data_mnist_test.bin";
+                }
                 else
                 {
-                    file = @"D:\data_mnist_train.bin";
+                    file = @"D:\data_mnist_test.bin";
                 }
                 data = ReadCSVData.Load(file);
                        
             }
 
             double[][] inputs;
-            if (menu != 3)
-                inputs = data.Inputs.ToArray();
-            else
+            if (menu == 3 || menu==5)
                 inputs = data.WidthNormalization(data.Inputs.ToArray());
+            else
+                inputs = data.Inputs.ToArray();
             double[][] outputs = data.Outputs.ToArray();
 
             string fileModelSimpan="";
@@ -134,10 +142,11 @@ namespace DL
                     //PreTraining(DBNNet, inputs, epoch, mb, 0.1, 0.5, 0.001, fileModelSimpan);
                     PreTraining(DBNNet, inputs, epoch, mb, lr, mm, dc, fileModelSimpan);
                     //Training(DBNNet, inputs, outputs, epoch2, 100, 0.5, 0.5, fileModelSimpan, false);
-
+                    begin = begin+" End-PT: "+ DateTime.Now.ToLongTimeString();
                     //DBNNet = DBN.Load(@"D:\embuhRBM_2");
                     //DBNNet.SetActivationFunction(new LibDL.ActivationFunction.SigmoidFunction(0.01));
                     Training(DBNNet, inputs, outputs, epoch2, mb2, lr2, mm2, fileModelSimpan, isRprop);
+                    begin = begin + " End-T: " + DateTime.Now.ToLongTimeString();
 
                     DBNNet.setTimeLearn(begin);
                     DBNNet.setAllErrCost(errCostFunc);
@@ -178,8 +187,27 @@ namespace DL
             }
             else
             {
-                NeuralNetwork network = NeuralNetwork.Load(fileModel);
-                CreateLogValidation(network, inputs, outputs, data, false);
+                Console.Write("Pilih true untuk DBN-DNN dan false untuk ANN/DNN=");
+                bool isDBN = bool.Parse(Console.ReadLine());
+                Console.Write("Pilih true untuk ANGKA dan false untuk HURUF=");
+                bool isDAngka = bool.Parse(Console.ReadLine());
+                if (isDBN)
+                {
+                    DBN network = DBN.Load(fileModel);
+                    if(isDAngka)
+                        CreateLogValidation(network, inputs, outputs, data, false);
+                    else
+                        CreateLogValidation(network, inputs, outputs, data, true);
+                }
+                else
+                {
+                    NeuralNetwork network = NeuralNetwork.Load(fileModel);
+                    if (isDAngka)
+                        CreateLogValidation(network, inputs, outputs, data, false);
+                    else
+                        CreateLogValidation(network, inputs, outputs, data, true);
+                }
+                
             }
            
         }
@@ -268,7 +296,7 @@ namespace DL
             int cou = 0;
             for (int i = 0; i < outputs.Length; i++)
             {
-                expected[i] = data.ClassOutput(network.ZeroOutput(network.Compute(inputs[i])), outputs.First().Length);
+                expected[i] = data.ClassOutput(network.Compute(inputs[i]), outputs.First().Length);
                 if (isHuruf)
                 {
                     if (expected[i] == 26)

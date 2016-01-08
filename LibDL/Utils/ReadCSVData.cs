@@ -86,28 +86,10 @@ namespace LibDL.Utils
             }
             return outp;
         }
-        private static int MaxIndex(double[] vector) // helper for Accuracy()
-        {
-            // index of largest value
-            int bigIndex = 0;
-            double biggestVal = Math.Round(vector[0]);
-            
-            for (int i = 1; i < vector.Length; ++i)
-            {
-                if ( Math.Round(vector[i]) > biggestVal)
-                {
-                    biggestVal =  Math.Round(vector[i]);
-                    bigIndex = i;
-                }
-            }
-            return bigIndex;
-        }
         public int ClassOutput(double[] output,int nClasses)
         {
-            //return output.ToList().IndexOf(output.Max());
-            return nClasses-MaxIndex(output);
+            return output.ToList().IndexOf(output.Max());
         }
-      
         public void LoadData(string file,bool isDigit=false,bool sign=false)
         {
 
