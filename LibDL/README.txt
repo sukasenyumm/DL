@@ -11,6 +11,7 @@
 //
 // Copyright © César Souza, 2009-2012
 // cesarsouza at gmail.com
+// http://accord-framework.net/
 //
 // Copyright © AForge.NET, 2005-2012
 // contacts@aforgenet.com
