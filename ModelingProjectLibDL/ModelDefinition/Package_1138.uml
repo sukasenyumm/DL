@@ -1,0 +1,2789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5364f594-d287-4456-9f68-449eeba38b57"
+  name="Utils"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="31450fd6-8112-4388-acc7-6f3f5baccdd3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLibDL.Utils"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e0468895-1da8-446b-82dc-8201c7e3189a"
+        name="ReadCSVData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ea458a12-776d-4974-9ae2-d62624e4c530"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="72d7b3a5-faf6-4242-89b6-81859da595d4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e4a0905-f984-4ecf-bdf4-1ecff427133b">
+                <propertyInstance
+                  Id="d29652de-6f79-478b-8f13-723c1ce56bab"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cbad257c-f8ac-44d9-b079-202682383615">
+                <propertyInstance
+                  Id="20e38c19-027f-42ec-b708-57e58c4e230c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87dff6c2-f152-4a58-8f5d-58c0668bf957">
+                <propertyInstance
+                  Id="20d3631a-c962-4237-a18d-e745ee83dbeb"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dfbf00b3-1141-4e38-9090-f7985ed95f9d">
+                <propertyInstance
+                  Id="21b41ecc-01c5-4828-a982-a05a83faa639"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f3fa021-4bb3-420b-aac8-27013bb04c13">
+                <propertyInstance
+                  Id="31f5577e-4079-43b5-ba12-74aa2a504497"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ace0a390-0ca3-4cb1-a747-8dac2908fc12"
+            isDerived="false"
+            sourceEndRoleName="ReadCSVData"
+            targetEndRoleName="Inputs"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+              LastKnownName="List&lt;Double‎[]‎&gt;"
+              LastKnownLocation="Package1_1135.uml" />
+            <description>Property Inputs references type List&lt;Double‎[]‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4ca555e-3371-4a1d-a7f9-2b14a21f1ce9"
+                  name="ReadCSVData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="995b2a58-366c-41bc-88ab-3cb0b99046bf"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ad0ed0c8-3aca-494d-9509-64ef6d10a0d0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a780d2e4-43af-4c13-a6b2-812057d89039"
+                  name="Inputs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1282bd10-a15b-4483-9930-54f95d3335cf"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="21fedb55-c67d-476b-80da-d9df5a7e0bc6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c29cbe00-060e-4f58-847c-fc21042758e4"
+            isDerived="false"
+            sourceEndRoleName="ReadCSVData"
+            targetEndRoleName="Outputs"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+              LastKnownName="List&lt;Double‎[]‎&gt;"
+              LastKnownLocation="Package1_1135.uml" />
+            <description>Property Outputs references type List&lt;Double‎[]‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89f2496f-24c2-454f-8036-cdb13617e94a"
+                  name="ReadCSVData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="52088731-fe67-4178-a730-1162814573ed"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="742133e6-5acf-435f-9729-7601d2761cb0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="555505eb-f9b6-4313-867e-81cff304a6ca"
+                  name="Outputs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ecb79888-436f-4eb7-8fab-1e04b781648b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f77067d4-cb8e-42e1-9955-98e35cd8512a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c53264a2-6eb5-4b77-8491-d7f328d58d8f"
+            name="Inputs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ccf6a24f-85cb-4ffa-9e8c-a678374ff253"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3DInputs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cd108546-4225-42f6-9907-7c89fb2a07b8"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87adcb05-fa84-419f-becb-ca5bc0a1cf54">
+                    <propertyInstance
+                      Id="5bc5d365-9067-4bfe-814c-3d95d96506eb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68f86820-2aa1-4414-b8c3-45fa87ad5151">
+                    <propertyInstance
+                      Id="c54af681-a5c7-4ffd-b26b-c5211786f2d3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3481b00-0ab8-44af-85fc-f8031d2d4685">
+                    <propertyInstance
+                      Id="5ea24780-c2f9-46e8-a9b6-904765a5faaf"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9e01e9a-c418-4c6e-8269-58c80f585ae0">
+                    <propertyInstance
+                      Id="83e6c5f8-4cd8-4826-9197-a6c0fcb0d408"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ea16c3a-48da-4264-b9da-fffc94c7625c">
+                    <propertyInstance
+                      Id="439de707-7483-4ff1-8893-f09e008d53b1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05b06116-8bf9-480a-808d-d7e620879b00">
+                    <propertyInstance
+                      Id="16f77846-c05b-417a-b9da-f72fcbba1635"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79c2c6cd-f1c4-4f09-a790-af432ed3b7c4">
+                    <propertyInstance
+                      Id="c908d70a-e6bf-4ed8-a8e8-941f20f2eb8a"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+                LastKnownName="List&lt;Double‎[]‎&gt;"
+                LastKnownLocation="Package1_1135.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a783e134-461c-44f8-aeb9-bf01bc3654f2"
+            name="Outputs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="861bf41c-e46d-4d36-ab7d-9c0d77587a9f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3DOutputs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a00f8866-7d0b-4c93-9f46-2eba2d6702aa"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e888e6c-9c0b-4f71-ab9a-4e812db989c7">
+                    <propertyInstance
+                      Id="45204675-f8bf-4341-9c35-e18270e73115"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3550bf49-03fb-4c09-9835-7bab71070f62">
+                    <propertyInstance
+                      Id="f7b5c71b-8dcd-44aa-8887-ff2b83d3dfff"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="341a9917-6366-4787-9f09-5184ff22edbd">
+                    <propertyInstance
+                      Id="9cd7de41-727f-4849-99b2-26631bda48c8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2653578-d467-4bc9-8d3e-611d01117790">
+                    <propertyInstance
+                      Id="d90783b4-67fb-4ff8-be6b-f5c6ae7a2bc9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9916613c-c453-4c11-a4d1-f8c8983e4b13">
+                    <propertyInstance
+                      Id="29807185-8356-487c-947c-a7d19b234de2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e856716e-eea2-495f-94fa-3d37bcd94f0a">
+                    <propertyInstance
+                      Id="4f0970cc-9618-4702-b866-6c7b106b70a1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89b05e93-7d19-4b58-8581-ca4265a329e0">
+                    <propertyInstance
+                      Id="f0bbdf89-8a28-4bd4-ab1f-dd9db21ccff8"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+                LastKnownName="List&lt;Double‎[]‎&gt;"
+                LastKnownLocation="Package1_1135.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="32ac07a4-b796-426d-8d5e-0b91ea5023d6"
+            name="inputs"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="74389b8a-518a-4a6c-abab-dc4c5067b2d8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3Dinputs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b7b7961-3691-437b-a162-0e3e7e9320bc"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e7beb1c-0775-48ad-933e-e03f12deafd1">
+                    <propertyInstance
+                      Id="30396aa2-8f1e-4bbf-b09b-04579a8b196c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="754ff541-1934-4a96-903c-1c0bd99f45c5">
+                    <propertyInstance
+                      Id="5ae310c7-73ed-496e-a0bc-30f70819d136"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b4a6ea0-f29c-44ee-9c00-9ff93fba5f38">
+                    <propertyInstance
+                      Id="10fd23a1-c735-4b06-818b-93d5090a05d2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3c576fe-fcd1-42a9-9519-80c61a244750">
+                    <propertyInstance
+                      Id="7b1064b2-a2e5-409c-b5e4-ec76011db1d0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acfc1ce4-cad2-435c-a588-50ba4d1b5190">
+                    <propertyInstance
+                      Id="522e7930-548f-415c-ac88-bb08ad584887"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+                LastKnownName="List&lt;Double‎[]‎&gt;"
+                LastKnownLocation="Package1_1135.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3fa22612-7a41-43f3-83da-7ebe2a7f4240"
+            name="outputs"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3dbf7e54-bcdd-408a-926b-fd4ed1250878"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3Doutputs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a1b4a053-53e6-4a34-818d-c504ec1bb55f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04164646-f591-455e-b1f3-36f8a402a296">
+                    <propertyInstance
+                      Id="e5b095f3-66f0-4785-99b2-456a99190b1d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="778a0fa9-e51c-4572-a0ec-c58ea469e049">
+                    <propertyInstance
+                      Id="0ea68e44-9e3f-45b5-8c01-f1b5695078fb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6f2f82b-8a70-4454-9b50-d551034f7eb3">
+                    <propertyInstance
+                      Id="e6bbeb4e-2bbe-4719-a865-56780c5397f0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9effc241-74e2-446f-adb6-e55237cc7d16">
+                    <propertyInstance
+                      Id="6bed91af-bb16-452a-95aa-2f9b68be4f27"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e117695-655d-4a25-b54e-c31254185758">
+                    <propertyInstance
+                      Id="d4e2c958-37fa-4cd4-aa0a-2157673a4ec6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+                LastKnownName="List&lt;Double‎[]‎&gt;"
+                LastKnownLocation="Package1_1135.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="42cee67f-578f-4cf4-a06a-0688a7a73cea"
+            name="WidthNormalization"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f2c0f494-ff06-4e49-b13c-c77b9233d6b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DWidthNormalization OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5983bffc-b9e9-40bb-a48c-2ce1de2790b8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e156f122-e46b-422b-ba6a-2ab37b594e23">
+                    <propertyInstance
+                      Id="4e2611d5-9eb1-425c-a4f6-ff28c858de47"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8466c21-59c2-43a1-abb0-1eaacbdd6398">
+                    <propertyInstance
+                      Id="b9f37316-ef8d-453c-a457-a15a06a0bbb9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e231db81-616c-468e-9705-b7eef553c331">
+                    <propertyInstance
+                      Id="f706e60e-89ca-4a07-aa2d-35e5f754b7e7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d69a0cf4-5b8f-4c6b-b818-ba187e14e65b">
+                    <propertyInstance
+                      Id="63581fa7-925e-4cae-a426-f84af4b3685e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4de58a2f-e354-4471-ac53-83b39ef4eaf7">
+                    <propertyInstance
+                      Id="15743d55-114b-4eba-b133-ddd9c736857c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3c12e6c-c01b-4abb-bd6d-1f6ccc554d44">
+                    <propertyInstance
+                      Id="63953043-5d6d-40cc-a0ed-933dbc603d5d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="84b8d683-0b84-4a88-a8a1-6a2e0c52dd54"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8cf97f0e-29e2-461c-9c45-30aff5212899"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cbba7693-0b00-47af-8cdc-690902281f11"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="35cb71f9-8e02-4040-93db-7a7ef7bd02df"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_1133.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49516584-9fd1-4e50-bca4-d945b399fce1"
+                  name="inputsMnist"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="a4f0b593-390b-478a-80d6-c93bed0f837a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DWidthNormalization OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble)))]) ParameterIdentifier%3DinputsMnist"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="20b93f20-f0f6-4002-8837-70d4b7a2aae4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2b88c0a3-fa16-4cbb-b5d3-4fd79e9fc8b5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="35cb71f9-8e02-4040-93db-7a7ef7bd02df"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_1133.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="45cc7f3b-a83a-4084-bf74-15e2048a4d03"
+            name="OneToNEncoding"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c4cbb912-ed33-42a6-9c99-5c38dfb01bf0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DOneToNEncoding OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="61df9c25-637c-4c4f-bc98-bcf75f781663"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd734d66-dcbb-44a2-b619-5803eda3425b">
+                    <propertyInstance
+                      Id="e77e6c02-c303-47ff-8215-ba15a7647c2a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea3b6637-18e6-44fb-86d6-123d1ee768a1">
+                    <propertyInstance
+                      Id="71862ca6-ad68-492f-92ad-7371ccdf0777"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b43d3c85-6c90-4b32-b5a6-bd7e5dcfaed0">
+                    <propertyInstance
+                      Id="f0762896-93ba-47ab-af07-52e1ca016dc3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccb5be5b-7c16-4a99-988d-743a4a0d0d36">
+                    <propertyInstance
+                      Id="0384835e-3975-4238-9242-7e2c0b2d2062"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24a9aeb9-6cfc-411e-9e87-595b4b836c88">
+                    <propertyInstance
+                      Id="08e321cc-d2ab-4904-a433-f40d2dc4535f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58200125-17ef-494d-8449-90addb248e14">
+                    <propertyInstance
+                      Id="7cda21d8-8a3d-45db-bbf5-633c35b4259f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f2b30c04-8ddb-477a-b5cb-8e6ad3b9c341"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="89937ce3-25a8-4f92-938d-275d7655c8f7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d84b7c98-843c-4b86-8da7-03cb6d4c957f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="35cb71f9-8e02-4040-93db-7a7ef7bd02df"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_1133.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2798f173-21fc-410a-b51a-a79647bbd19b"
+                  name="constraint"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ba6f475b-73b4-40fe-a6cb-81839a3b637b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DOneToNEncoding OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dconstraint"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53bdea33-6845-4c33-b95a-1535ded803fd"
+                  name="index"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5afd1146-e075-4bc9-909b-2871dbd40450"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DOneToNEncoding OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dindex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7d70136e-a1f8-43af-ad27-e661356b6a26"
+                  name="sign"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="65b3e1fa-34d7-409d-9647-3eb25cbc0bed"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DOneToNEncoding OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dsign"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8abe4993-5e17-4179-ba2b-7d7a40a8907e"
+            name="ClassOutput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="19a6695b-b297-49ad-9ee4-ca70ba1023c9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DClassOutput OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f8bbd0d4-5279-4a21-88d8-bcf8c55bf418"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="448dd82c-2cfc-4e51-b550-7baf3d03d25f">
+                    <propertyInstance
+                      Id="064f796d-40b7-4738-9524-c95b1aa18f5b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="860080a2-87f3-474a-a6d2-5263787575b2">
+                    <propertyInstance
+                      Id="ba8360c7-7bb3-4d0b-a596-8b3949a62ff7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e17c6a31-dd09-4193-855a-ef8356cb0952">
+                    <propertyInstance
+                      Id="3386c1b8-7e1c-4056-bfb6-f02a18996eb0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ed849e4-5ec6-4254-8093-50d151a7d9c5">
+                    <propertyInstance
+                      Id="f6224d99-0b21-4c3e-a4bc-7fd53e61f863"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fe7759a-baaa-4540-92fe-41d546c97be9">
+                    <propertyInstance
+                      Id="c5fdfedc-b94c-4d73-85b4-7942e2c2cd0e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d3b5f5d-3484-46d4-9c8e-dd5d03977d02">
+                    <propertyInstance
+                      Id="8681c22f-5bea-4887-994c-55a639d3e684"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e7beac7-d1e8-479f-b5f6-9cf9dde1923d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="56a962a6-ee86-4355-9a3e-2cef4108a5b3"
+                  name="output"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="31e995c2-bc16-40c9-8e3c-86d401958cfd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DClassOutput OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f615c10e-21aa-4026-b8d4-2a3611637fe5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b0f81079-018c-471a-a727-13428370e851"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="35cb71f9-8e02-4040-93db-7a7ef7bd02df"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_1133.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="653bfe64-7682-4bb2-ad4e-801af753060b"
+                  name="nClasses"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cee0e47f-7091-465b-8317-1bff6045b7d7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DClassOutput OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D1 ParentType%3DDouble))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DnClasses"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cbc082a1-7451-48af-944a-f5a27e25ae29"
+            name="LoadData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0294307c-738b-43c6-b92a-f3f2a31da956"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoadData OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ac037ff0-6c2f-46af-b33d-63c1b178d630"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c17aa454-8895-4152-ac00-d103bb4c865f">
+                    <propertyInstance
+                      Id="28941c7a-b8a8-4429-ba59-7aae53e9e1b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8587de0b-e470-4af4-8ff0-1ac25490e213">
+                    <propertyInstance
+                      Id="05a19d8a-8970-470c-9f5d-7b524f28ea3e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d43a2368-dc2e-4d2b-9bb6-abfe9e375c79">
+                    <propertyInstance
+                      Id="4bb1b038-0c5f-42a4-b317-bdc6f5d7e043"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25bef84e-c249-4619-bbd5-53197f6b49ed">
+                    <propertyInstance
+                      Id="0a5586e2-7b1e-4f94-b7c5-2d9b3ba5365b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5384ea3-1698-451f-9e64-16858ebd9dcb">
+                    <propertyInstance
+                      Id="97d3b9d8-e30e-4d92-b117-eb772f3fc714"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c33458d0-f0f2-4680-af5f-ee9425648508">
+                    <propertyInstance
+                      Id="2a287754-bf7c-4fbe-b20f-a9eb2bafdf90"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d84b0b42-cac9-4a4e-a51e-afee8513da66"
+                  name="file"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a90b7a5-810b-470f-a0e2-219202befd72"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoadData OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dfile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74efb0cf-930b-49b1-b2c3-81e864c6e2f6"
+                  name="isDigit"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="214e3e58-2d2a-40f2-a8c5-3ab13de5a8a7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoadData OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DisDigit"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81a53174-3000-423b-a465-1989da7d277a"
+                  name="sign"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="90eb1947-8cf3-46ef-b535-3f512886e443"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoadData OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dsign"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6d8d06d7-a089-45bd-8877-275746e81ffc"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5145c8e0-5afd-4019-8d5f-1008d603ba2b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="deaee04f-c366-4715-a4d3-e13101530896"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea008574-3e3b-4515-b897-9a1a34213cba">
+                    <propertyInstance
+                      Id="bffe153e-d631-446a-a2b0-ed5b7a504188"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b3206ba-5bcc-4978-90c2-5ed84bd0d9d4">
+                    <propertyInstance
+                      Id="e24d3dbb-c816-4d23-a7b1-289827417533"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3eb7ba4e-dc71-4e10-a87a-ecaee27ba459">
+                    <propertyInstance
+                      Id="61a31948-a53d-4f8a-bb4e-ecccc2a1cdcd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e55c78b-e390-4b7f-a780-56e5de90e22b">
+                    <propertyInstance
+                      Id="8bd3f28a-1c8b-4b2a-ba3e-1489fa907561"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3b5a353-ae88-4c0d-8579-6a4ea83810dd">
+                    <propertyInstance
+                      Id="a216b2db-97f6-4440-b32c-7e60e2f9c651"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eb3885a-0b47-4414-a2b6-f3435b1bc304">
+                    <propertyInstance
+                      Id="a3e853fd-280c-455c-939c-2bfd3b970ac5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b493d00-301f-49b3-99e8-f233d74ea0de"
+                  name="stream"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d9d368ad-7021-411a-9754-1866f256c155"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)]) ParameterIdentifier%3Dstream"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="74a4e827-1a38-43f1-931e-ca2822e0aa40"
+                      LastKnownName="Stream"
+                      LastKnownLocation="Package1_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6095f1a2-0438-4e39-b06a-e52dcb8c019e"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d6fe5853-7302-49e4-8c3c-1d0fc355706b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="004dbbc4-769d-4d5d-b1dc-8d643b0ae773"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="449b4130-7a17-49fd-9bb2-6f93d4741c83">
+                    <propertyInstance
+                      Id="4759bf7f-474d-435d-8f28-14c5623e368a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56452c35-9448-4add-8b22-10bc2f82f1b5">
+                    <propertyInstance
+                      Id="a0a11b68-091b-42a9-ba9b-73a3a18ff892"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f24def75-3bf2-4704-ba67-b7c8039811a3">
+                    <propertyInstance
+                      Id="5b8a1f56-8406-4a9f-9176-9f7204757574"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="793a02b8-67a8-4ed2-ad1a-4d3dad72322a">
+                    <propertyInstance
+                      Id="3c50816b-bdae-41a0-9b90-d46d9988b380"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2f4c55c-2d2c-477c-9958-9e9256f657a5">
+                    <propertyInstance
+                      Id="9c9056bf-02e8-4cbb-8d6c-6182dd773f79"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2af2f39-94d9-4cd9-b65a-86a224078123">
+                    <propertyInstance
+                      Id="ef8e5a8f-67cc-4fd8-9a84-6f100f883f2d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3af43e78-20d8-4e5d-8c2a-72444d48aa80"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6aae0e1c-063c-45ae-be7a-b561ddd68a60"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="120969df-cd54-4302-a615-b156364655f0"
+            name="Load"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2e0b6d01-97b9-4695-9da4-5dff79a43763"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f23df53b-b952-4d0b-8839-3f91673c6e12"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49d99a57-8e1e-41c9-bdf9-3e1bd5296117">
+                    <propertyInstance
+                      Id="d83ff1ff-6730-498f-9857-b9e5538f48b2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73b36e3a-48dd-4b5f-8b2c-4485097c8350">
+                    <propertyInstance
+                      Id="697f14a3-4591-4acd-a865-19823c793b57"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc8bd440-3944-4bca-953e-d04d4b0a50d3">
+                    <propertyInstance
+                      Id="dcad6779-f9b1-433b-93ae-cf328839df2f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9a6efb0-a0d6-4fe6-8f95-54ed8d0b9c8d">
+                    <propertyInstance
+                      Id="6099288b-fe15-44d9-9a09-4335a744e37b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8c71ace-bc99-4e81-9fad-d306581cd742">
+                    <propertyInstance
+                      Id="ab877171-f2a3-4ff8-a497-0590ccf2426f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="551f097b-9ae4-4704-a5f2-2cdabe8d88e2">
+                    <propertyInstance
+                      Id="0278a15b-d3a4-417b-8e68-d8d0a6d18069"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e4598b94-22d9-44ec-98db-004fcdc1e894"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e0468895-1da8-446b-82dc-8201c7e3189a"
+                      LastKnownName="ReadCSVData"
+                      LastKnownLocation="Package_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20a0eb50-2432-4af2-b8fa-b7bcc7e04b12"
+                  name="stream"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e9b469e2-477b-4e0f-a8fa-ef7bab6fd705"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)]) ParameterIdentifier%3Dstream"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="74a4e827-1a38-43f1-931e-ca2822e0aa40"
+                      LastKnownName="Stream"
+                      LastKnownLocation="Package1_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9e684c31-4f27-4493-bad1-95181dd5fe2c"
+            name="Load"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2cf02909-c0e8-4c49-9600-9655fdcf52a9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b04e4834-823b-48e4-80c1-71d7d92f771b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f33475a-ed46-41e4-a216-9c86feeb4b20">
+                    <propertyInstance
+                      Id="796ce666-3f3c-4434-a510-a24b16805c55"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8b993f1-e09c-4203-ac31-948ce8306af1">
+                    <propertyInstance
+                      Id="85e096f5-f244-4fad-a7f4-b9274f0261bb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84545456-4749-42fe-879f-71b416ece509">
+                    <propertyInstance
+                      Id="f372f376-db26-4020-af58-8e437ac3af14"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0084b8c1-f604-408b-9538-329547d14e21">
+                    <propertyInstance
+                      Id="3749b2af-9908-49fc-9351-5fa845a95edd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="378ed84b-195d-4f29-8536-a9280e5e3386">
+                    <propertyInstance
+                      Id="a33af70f-5dfd-4730-89af-4700af7c8f80"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d30eac9-3857-44b8-8b83-27f29d38d9b7">
+                    <propertyInstance
+                      Id="1443d151-2752-4ed0-a9b8-b66699381be4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48f325d2-c38b-4948-8dea-07249197dc6a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e0468895-1da8-446b-82dc-8201c7e3189a"
+                      LastKnownName="ReadCSVData"
+                      LastKnownLocation="Package_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6e2d5d7-905b-4c4f-90ea-af01ba8d78fc"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f944ae5c-04b5-4116-a275-1383cbd0be2b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b4a26a8d-85be-49c8-b71e-6d728cab6a33"
+            name="ReadCSVData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7a910936-cd7f-4b1d-a622-42aca77100b8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReadCSVData Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6f31263-ae92-4a90-ab68-89e33ead34e2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2363765-dfbe-44cb-a33a-7c5c7d4412a2">
+                    <propertyInstance
+                      Id="41490ede-e10a-4a22-82f7-29b7e06d52d4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34755d30-293a-4bba-a77a-3a9fef349f08">
+                    <propertyInstance
+                      Id="e620eec4-d184-4117-a13f-2663937a5f4c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7a9056e-df24-499a-a202-0e0222bcc3a1">
+                    <propertyInstance
+                      Id="58ad1681-081a-4367-a697-7ce7235bb77f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1123f190-e90e-49de-9699-5a45066e0ae0">
+                    <propertyInstance
+                      Id="a81d0efa-25bc-4a59-ab97-2e3921d4868c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7f40640-41ad-445f-af87-332d7765e939">
+                    <propertyInstance
+                      Id="edbc96bb-27ba-4307-b59f-56eebbbf7def"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b033bd79-5b7c-42da-b4c2-4506da6e40bc">
+                    <propertyInstance
+                      Id="77324186-9235-4386-91b5-5f94bce7477d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4f556d8b-3fd9-4592-815d-b972cab9de14"
+        name="ReconstructImage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6fabc21b-9295-47c5-8794-05c71b7aca75"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d3acddfd-4db5-4129-afaa-83c053fdb401"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="421b0d39-dec3-4d20-8471-4f00501e7bff">
+                <propertyInstance
+                  Id="61a18000-c551-4433-bc95-32a5cf04fbe1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a22f89d-9f83-4fde-afa5-41a09e223605">
+                <propertyInstance
+                  Id="0fad74d1-42ae-48d7-988a-3dc966d1b218"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="093dbe73-8dbb-428a-a1ba-95ef32fad03e">
+                <propertyInstance
+                  Id="58923dac-58ad-4b98-9d70-1cf67cc5e841"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e7e7309-a8eb-4974-8122-56c6010b2455">
+                <propertyInstance
+                  Id="8bd351cf-2713-426b-b1af-ee308adf9cbf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f09dd64-30fd-4450-b8eb-6bb3a5f6e3d9">
+                <propertyInstance
+                  Id="ef5b3d88-749c-43ca-bafa-f0a5498f95b3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8abec677-3f95-486d-a105-90aa02271fe3"
+            name="reconstruct"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2f498707-5884-4564-8fc1-b7af0c0e02fc"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3Dreconstruct"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c05dd240-5afc-48b4-abbb-9c533ac3f607"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87581704-0fa5-4eda-837f-2d2305845537">
+                    <propertyInstance
+                      Id="2a14ac2f-966b-45cc-b2cd-177f4e15a0fd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9ce0651-05e5-432f-a5eb-a727afa7dbd2">
+                    <propertyInstance
+                      Id="e20fbdc6-e5d0-4048-84a3-81e5cfdb24f3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0b80cf2-494c-45c0-942f-39117520b7dc">
+                    <propertyInstance
+                      Id="fc44bb97-9ad5-4061-ad77-a2afd0177893"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="200a526c-ff48-4109-b5cb-92fa70a1085d">
+                    <propertyInstance
+                      Id="3db3294b-e9ba-45c1-bafe-f282bb0d82c3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c15b555-d0d6-41e0-aece-89c6d4056871">
+                    <propertyInstance
+                      Id="8e643f71-640e-4eae-aff1-00c297c62b37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c3ccb7d1-e81d-44fd-a99c-68fbe39e2a4a"
+                LastKnownName="List&lt;Double‎[]‎&gt;"
+                LastKnownLocation="Package1_1135.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bd55f37b-415b-4fc1-8c58-137ce6e8d905"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1d833364-1947-4603-a81c-c8189d075d2f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="495cce5e-6c96-4d63-a324-f97388470b69"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8b62cc6-ef34-4387-992a-7e13f5522700">
+                    <propertyInstance
+                      Id="1eb15b4a-02db-4dce-aa4d-ceda639f8d90"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1393334d-5f2d-4b19-986e-775074f1341a">
+                    <propertyInstance
+                      Id="72d02284-f2f2-4f0b-916b-1eb6bdf841da"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a73c931e-4eae-41db-87af-60434a1e3632">
+                    <propertyInstance
+                      Id="6a40d643-96a5-4950-94d5-901da6b6db98"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5b7b16e-c4d1-4453-8e9b-68dbf9f04af2">
+                    <propertyInstance
+                      Id="53487354-ac31-4bd4-992a-9ecdb1c8ec91"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="766b6214-3ae9-4ec2-a8ba-7adbdf324334">
+                    <propertyInstance
+                      Id="6c45c698-05b7-4005-895c-3a580d748791"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38619419-214f-4e36-8856-fa50fe1a50f4">
+                    <propertyInstance
+                      Id="0fd17737-19b7-43ef-b07c-acd891927203"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38f5489c-6275-4a3e-b418-c98ffc68495e"
+                  name="stream"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="310da99f-6a15-4e88-8191-72ccf4f97cc7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)]) ParameterIdentifier%3Dstream"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="74a4e827-1a38-43f1-931e-ca2822e0aa40"
+                      LastKnownName="Stream"
+                      LastKnownLocation="Package1_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9e450436-0211-464a-850f-e73c5d357578"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="356f398f-710d-4dbb-b135-f2635cb5dfdf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6407a7f3-b55e-48d0-b659-a748aa072dc9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9499ab38-409c-4e32-8c68-1db1dc956e37">
+                    <propertyInstance
+                      Id="b02b3a8d-9a2e-4870-a669-183114f726de"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c335dbae-b8fa-4932-b895-3e43b64856dd">
+                    <propertyInstance
+                      Id="9178202e-b86e-497d-9c76-ba57e7cc4e9f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d7f2ff7-3b73-4809-9202-fcc67ec7c39a">
+                    <propertyInstance
+                      Id="611f9906-96bf-4b14-bddb-ebf9dcc6f3c7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2d35a0e-1f6a-4177-b101-56caf43cb079">
+                    <propertyInstance
+                      Id="de307364-3926-4ee0-9337-72d99a718fbc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea6085ea-e6bd-4c91-a7da-bb9f5db7dc9a">
+                    <propertyInstance
+                      Id="97fc89c9-3262-4fe3-91cf-656ad72cad22"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b98bbc72-8d24-43ec-b10a-2fa7c0d9533a">
+                    <propertyInstance
+                      Id="eeab6918-8970-4685-b28f-58eec38748f5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f56e8f3e-0a50-4135-95ae-c9cb9ea044fb"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="80fd2fa1-b35a-4861-988c-6981bbc831f3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3408103d-0edc-4f56-8e8d-fee4972454e6"
+            name="Delete"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cfc0b4fe-11f7-46db-bd56-c6d96d29563a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d66cc5d5-3e5e-4785-8ab4-bb7a94f60381"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36492987-9b87-48ed-b754-599d28982fc1">
+                    <propertyInstance
+                      Id="fb2f303b-242f-4603-867c-cf6b10726cc6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3d59796-4ce4-4092-9ada-6121cd59f53c">
+                    <propertyInstance
+                      Id="6fd1f696-fbe6-4b19-8056-a752c06a34c3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36d9298f-a6a7-4965-97ab-2e3ae5ad863a">
+                    <propertyInstance
+                      Id="e1dc50aa-9a4c-45af-be62-9abe32d0d114"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cd1489f-a3ae-4102-b53a-64c0c4886064">
+                    <propertyInstance
+                      Id="50aec25e-c42b-443f-984a-e164ecc34ec8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d25b19d9-4eb0-4065-81f0-4945374b35f1">
+                    <propertyInstance
+                      Id="52fae01c-2222-4155-a095-66c13e11fef4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e9ca4b0-a469-47e9-abe6-8f648ff735ff">
+                    <propertyInstance
+                      Id="ef1c4d16-9f90-4ab5-8feb-f283c11b2184"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1aa93f74-cdf8-4f9b-a1f7-5496e5a2e21a"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cc003adf-eeac-4d2d-ba50-4cd810b623a5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f202ac1f-d7e9-4f64-af6b-eb61290dd567"
+            name="Load"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cf01941f-ce06-4334-8644-c2066e25b369"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b75002d-67c5-4e8f-94af-afbb9beee5a3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b6cf5cf-39ef-4931-9c88-e8c8fa8df3bc">
+                    <propertyInstance
+                      Id="a889f972-d3be-4704-90c1-a21ddcf5198f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2212fc19-958d-4221-b93e-0b167914eb43">
+                    <propertyInstance
+                      Id="b4a7931c-bd1b-4638-900f-94b0f660a1b8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08a33cf6-695f-41c6-9ea7-087338147606">
+                    <propertyInstance
+                      Id="240c4c70-177a-4ef5-90a9-b38bf806cd32"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba387a04-aa83-4fd2-9adc-14ca4c6321d3">
+                    <propertyInstance
+                      Id="442ff176-752c-45c7-8e1a-75f20536e1c9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46535af0-ffe4-4e7b-ac5f-24b39e2e2217">
+                    <propertyInstance
+                      Id="9abbdc5b-8fb1-4bf3-973c-c300818b61c6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cf79e73-2335-4a76-b28a-b685c34b4453">
+                    <propertyInstance
+                      Id="03a9efcf-ce52-4325-8bff-c496f4c5b62a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0dee6131-45eb-45bc-8fce-49e57e3647b5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4f556d8b-3fd9-4592-815d-b972cab9de14"
+                      LastKnownName="ReconstructImage"
+                      LastKnownLocation="Package_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="28dacdd5-71c1-408d-a15d-7b847ac195fa"
+                  name="stream"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6b4339e6-62d9-445c-8f7a-efcbe95c8742"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)]) ParameterIdentifier%3Dstream"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="74a4e827-1a38-43f1-931e-ca2822e0aa40"
+                      LastKnownName="Stream"
+                      LastKnownLocation="Package1_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1871d897-65cd-41fa-8357-833b54852c1d"
+            name="Load"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f381ef61-73d1-4b3f-8530-c0c12c9fc3ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0f34b1d4-96c0-4e1b-ac62-764b3d07045f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f09892d1-5469-4004-9f94-2d3a6fc4bc08">
+                    <propertyInstance
+                      Id="57ce1535-9e07-4c3f-8290-5c306e5b96bd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="037f260e-16b3-49c7-b505-fdfb50f60c36">
+                    <propertyInstance
+                      Id="077e69cb-dddb-4625-bd0d-a10f8683511b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d60dd79-2342-4e1f-9ef9-0ad93f22fa3f">
+                    <propertyInstance
+                      Id="50da0f84-f3ff-4910-9be1-9b270803c180"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6000146-2704-48a6-8166-e9bcc38cbe3c">
+                    <propertyInstance
+                      Id="b4897be6-a636-4afc-aeae-940b5588296e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="168babad-339d-4f45-a748-0c7ff7daf858">
+                    <propertyInstance
+                      Id="3c1308ec-04ff-4a09-8f1a-0d63d788a373"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d951bebd-b9d1-4e24-ab27-7a2df29c6f10">
+                    <propertyInstance
+                      Id="a5c7710d-0983-41d3-ab81-795c70f03fca"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f61a2a81-2ed8-4376-bbd2-4ce8f2a5057d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4f556d8b-3fd9-4592-815d-b972cab9de14"
+                      LastKnownName="ReconstructImage"
+                      LastKnownLocation="Package_1138.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c25ce712-b14e-4d19-8642-f46b231b5821"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fff33b33-e805-4fbe-a818-61c7a92b938d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0ae15893-bf97-4aa7-bf65-baca9e6b0e28"
+            name="ReconstructImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="eb0555a4-acbf-463a-8aab-3288f54a9a43"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DReconstructImage Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="813c342f-e564-41ed-9b6a-2c2b870f8801"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04e85638-7f6c-4e03-b606-1a74d43821ff">
+                    <propertyInstance
+                      Id="97889af8-d746-4c68-9f13-f03a07d84e93"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cae0023b-d5bf-4cf0-b48d-aa5494665f77">
+                    <propertyInstance
+                      Id="a0b0d9ff-dfd6-4402-9715-74f589d51e2a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63bf1372-e63e-47a6-9457-dc79d6bb48c5">
+                    <propertyInstance
+                      Id="bf4958ef-04a4-4955-a2bb-d00f6691a37c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1516334a-3a66-4261-a1a3-3d66087e6cb8">
+                    <propertyInstance
+                      Id="7ee352b1-0ef2-4a02-9a23-dccf21a57669"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d622d9c2-560b-4b36-ac33-6c507dde0394">
+                    <propertyInstance
+                      Id="c7112e25-2d5e-4d40-be75-cd9d02f583e0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a00a5d3c-1e7d-4aad-8f15-3abfff0450bc">
+                    <propertyInstance
+                      Id="895f3b96-fd97-42d7-adb4-22d4d4a4f45d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="175e7479-d927-4456-98a3-973595b8c469"
+        name="ThreadSafeRandom"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f9f13a14-5b92-47be-8793-6074cb5bb2f6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0087cdfb-8af4-43e7-9b1f-8aff6cf989b5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cc45bf0-527c-49ed-84eb-8c8a3269844b">
+                <propertyInstance
+                  Id="706d31b3-b541-4d78-86cf-8529dd15386e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5bd006e6-3800-4090-bcc4-74a9d4327792">
+                <propertyInstance
+                  Id="3ae57052-e750-4658-b7bc-cc3ec22a45a6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36395f1a-9eb6-4ebb-b088-d60ec43c8b51">
+                <propertyInstance
+                  Id="578384b5-f942-45a3-9dd6-731b40b49986"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5eec5e79-81fe-45fe-aa60-ef00cd2620e6">
+                <propertyInstance
+                  Id="70a43d5c-44e7-4690-9255-1753879d1cef"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6d4dd65-09cf-4927-8f6b-4bdb1461a4c7">
+                <propertyInstance
+                  Id="f8db776e-51e6-4a86-9aa9-f171c1ed227f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="9b28614d-2f59-4ee9-bbb1-cce6e51863b8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="111686b5-c540-47f1-9ae2-e1f5f72eee50"
+              LastKnownName="Random"
+              LastKnownLocation="Package2_1133.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="077c87d1-54f7-4ba9-b2d5-0dddc53c98b0"
+            name="_lock"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="035860b3-6544-4422-884b-98bcdc001520"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D_lock"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ad93e52-83ed-4f54-985f-9e3df6ad087c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f696ca6-1391-491a-a488-a57f5ee509ff">
+                    <propertyInstance
+                      Id="9c800687-9786-42ae-8cd3-1a1ff7ea4a88"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f91f3f9e-bf6d-49a6-a917-2c98f876e5e2">
+                    <propertyInstance
+                      Id="b268dc09-619b-48d6-94f8-904148718b5d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fefe5a8-ba8d-45b7-a412-58b2e80bd88e">
+                    <propertyInstance
+                      Id="e4f38a19-b3e6-4479-95f0-6f26cddd9028"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bfe9aa1-a21c-4741-b305-de8440109983">
+                    <propertyInstance
+                      Id="383b3ab0-bcc5-4872-9da1-9a273fd55946"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07abd13d-a26b-4403-b479-1bc79cdcfd79">
+                    <propertyInstance
+                      Id="01826cfb-ce01-423d-8b4a-b68f8caae127"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9da460b5-a6a4-47f0-8552-3b544669b7f3"
+                LastKnownName="Object"
+                LastKnownLocation="Package2_1133.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e2fe962d-43d9-4a54-b2f4-419fc2b19b76"
+            name="Next"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29e3531a-27df-481f-9c1c-56a69fbba164"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3DNext"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e7290b2-e30d-4f17-a818-bafd3d7cfdae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04d6f0c0-08cd-4568-a996-520e94c5d54e">
+                    <propertyInstance
+                      Id="efe27e00-6e6e-49d5-bc91-5db1d82194b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0833bf9c-dea3-446a-a461-92fc8aedfe37">
+                    <propertyInstance
+                      Id="1328b5b0-b612-4ede-9ab9-bbabe4e652bf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86e67805-bea0-4c77-8479-cda67ed199db">
+                    <propertyInstance
+                      Id="8e799df8-788a-47b0-b4bc-1346a64d68a2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f04c69d3-b937-4ad0-b290-a4fb0d90893f">
+                    <propertyInstance
+                      Id="8aad14c5-31bd-47b2-a358-f2a897689aaa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="979907a4-e629-4c69-81be-c12c5b72efb4">
+                    <propertyInstance
+                      Id="6a58f129-d355-4237-babd-a818aff70ebb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6bc5343-473d-4d61-973c-027d2265a238">
+                    <propertyInstance
+                      Id="2a4a5a39-5e8e-47b9-a181-c774a8eed504"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="23176e08-ecf1-4896-8156-7ea60304f610"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ad14d5f0-902f-44ff-9f0c-5dd220333119"
+            name="Next"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29a540f2-0487-4123-928f-68c980e3a0ff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b3d9d066-3e03-42c4-826a-1b4a70d0383e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96331574-82d4-4130-a6b5-13efb7b9855b">
+                    <propertyInstance
+                      Id="50c7fd8a-dcb9-4d99-9771-11282cf9bd57"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5492fb8-b4c5-4a27-9490-d084870c2955">
+                    <propertyInstance
+                      Id="c0f6401e-4401-484a-af29-8cfe6aafd777"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="813d2949-0e4c-4063-b6bf-2e8212500174">
+                    <propertyInstance
+                      Id="24f9b1b6-0446-4bd6-9b08-3063a91633ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a9963e6-d64e-4848-8ba6-0a378268d606">
+                    <propertyInstance
+                      Id="f5c83e7e-5a22-4111-923a-8591b7a37ab6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="878b6eef-a1a4-48bc-a01e-a9f0de170ed9">
+                    <propertyInstance
+                      Id="3f4f53f7-0e2e-42d7-81c2-ad5211fe6357"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7be4e2e-dc88-475d-ab3f-998161b98b09">
+                    <propertyInstance
+                      Id="80faf1c4-c402-4526-b76c-9c6c74d358b3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="298462a5-17a8-41da-baba-266383d416d4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1c3d82c9-0380-4521-a505-e8f3e4ccd166"
+                  name="maxValue"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83111feb-c4da-4488-bdef-c31cbc4c2039"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DmaxValue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6691af02-85d3-4e2e-9d63-bb5398a30698"
+            name="Next"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1275cd5d-387b-43d7-8311-1b6bc89cd669"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4436bb65-7974-4702-9ded-bf5ffc8752fe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64b2b0a1-a57e-4d16-bcf2-fe704e6bee39">
+                    <propertyInstance
+                      Id="e36844db-7dba-48da-9c33-7bb0cff64e22"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae63b5bf-a055-46ba-bec1-4dba94b894d7">
+                    <propertyInstance
+                      Id="161d168b-a4b6-47ad-9e1b-ab94b9c421e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a109dda-39d5-4de0-84c1-334c08b4a848">
+                    <propertyInstance
+                      Id="200d1f72-d61f-4b48-8131-5aa5096a60cc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91765eb8-6c15-42bd-9ca4-3e7ef65b3748">
+                    <propertyInstance
+                      Id="5f46c1b5-c80d-4906-9151-672fb2308e75"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="172d0db7-7e35-4441-b40f-53ee7e3a7443">
+                    <propertyInstance
+                      Id="840c7822-9cbf-4e14-bc7a-02f2298c07b0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a48c8f76-73f1-413e-ae46-c95d31c52481">
+                    <propertyInstance
+                      Id="8269c4c9-dffa-4fb3-9b41-563ac669576d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="364070e5-bbf3-4e00-aaba-c5f3dd627657"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee211a39-3650-4454-b281-e82a57c4bee2"
+                  name="minValue"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5216e580-802a-48db-9c2d-f46a51f048f8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DminValue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4701ee27-c2c0-466b-8b6e-81957b79185c"
+                  name="maxValue"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="61d4c7f7-b8ac-47bf-a4ff-ca2409635e53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DmaxValue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectLibDL.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b2a80e42-9d06-47fc-9fdd-5feac89e1131"
+            name="NextBytes"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2b3b5973-9169-4486-a5db-7acfa5da96c9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNextBytes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="327adf44-ea88-4d8e-a445-6cb458c00428"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02d934cc-a2f4-4559-8a36-3e788e5d9f50">
+                    <propertyInstance
+                      Id="ff062799-b2fe-4b14-a494-e94faa6709c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce304480-bef4-4e1a-9a07-076d3a9b9f36">
+                    <propertyInstance
+                      Id="27b7ca56-70c9-48b8-aa29-3d6a2eef4fb0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a058c022-0f44-4b6b-bb8a-5044c1f4c16a">
+                    <propertyInstance
+                      Id="95a5aff0-24b5-481f-8775-a8d729461717"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fc75d49-fdce-4afe-9b28-581408ffdeaf">
+                    <propertyInstance
+                      Id="93ad08fc-b41d-42c6-beef-4b8bf18cbffa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf661941-c997-4ac4-957e-ec5f9f6bdc5c">
+                    <propertyInstance
+                      Id="525c23b6-885e-4eb9-8ba6-d242d4208ec5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f22a40d-05c7-4589-9615-cf02ec6343eb">
+                    <propertyInstance
+                      Id="5e9d2bbb-53b3-4f07-b31a-8e7afbc4cfc7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b18ebb4b-2cc9-47b2-8752-abbb0c4fff98"
+                  name="buffer"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="15940339-6c1c-4112-bbe3-c0aee6033545"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D(Name%3DNextBytes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))]) ParameterIdentifier%3Dbuffer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="462a22f9-2769-4fdb-8a91-a6f2719717a8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3dbd3a93-b550-4d5b-8455-b33efad9e0a0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6b7ad1cb-df0e-4ef9-a114-ce37e81ff0bf"
+                      LastKnownName="Byte"
+                      LastKnownLocation="Package2_1133.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="538d3c0a-3780-4d9d-a334-1e3607ddeb7e"
+            name="NextDouble"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="deb767f5-9c99-49f4-8a13-a680f1cf9acc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3DNextDouble"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e867d86f-66a7-4368-8c06-7c1e02d683ca"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="897bff71-04ce-4ec9-b29b-b8bf5df02bff">
+                    <propertyInstance
+                      Id="9a35b5e7-80ff-4ec4-9fed-c7c5d0316703"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="932ef8ef-c640-4aba-a710-dc1621468620">
+                    <propertyInstance
+                      Id="ffbedf21-1c76-4b0e-b6a0-ff73fb67815f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aa4d5f5-6db7-483e-a88f-b2dba2c1030f">
+                    <propertyInstance
+                      Id="be9853ec-680d-43af-ba38-c0ace888bcb9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41047016-9d51-427d-8d36-f3103da6d3e5">
+                    <propertyInstance
+                      Id="22c8b911-a94a-4fd5-af59-6bbc5b07aac6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3417b21-0d77-48c5-a7d1-a4378c126d31">
+                    <propertyInstance
+                      Id="33dd26aa-9f50-4d65-959e-52a2d26a045d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bc63f50-ec91-49af-ad0a-68039457567f">
+                    <propertyInstance
+                      Id="1c3ecb9a-6533-46f5-bfcf-6372368918f7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c96a14b3-f229-4e96-93cb-d687f1ed252f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="35cb71f9-8e02-4040-93db-7a7ef7bd02df"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_1133.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0417153c-f0d8-4f36-bf8a-aaaa056637c9"
+            name="ThreadSafeRandom"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="916cdccc-a2d3-4c7b-ae57-5327e26a4494"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FTHESES%2FPROGRAM%2FFINAL_TESIS%2FFIXPROGRAM%2FDLFIX%2FDL%2FLibDL%2Fbin%2FDebug%2FLibDL.dll Namespace%3DLibDL.Utils Type%3DThreadSafeRandom Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c080dbdb-b62b-4a76-8154-4c17005b3c52"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfc67b57-e586-4048-8d9e-34fdd78f5833">
+                    <propertyInstance
+                      Id="39ac1291-20db-40cc-90ac-270668ac7990"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a12b425d-13ba-4ab6-b885-9731cf76b03e">
+                    <propertyInstance
+                      Id="86238421-9d83-47bd-b557-ee06fad3a726"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="901c8d75-f02c-4ed0-a91c-2f420aff48b8">
+                    <propertyInstance
+                      Id="a8b804dd-986c-4ec4-a663-8f105323813b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9639278-7e55-4450-afc6-da727bd07054">
+                    <propertyInstance
+                      Id="aefe5d2f-bd78-43a4-84b6-4becda62a2a0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11657baf-6307-4954-9fd4-818fb0b8819b">
+                    <propertyInstance
+                      Id="dd508ab1-6e0b-4e2c-a661-2f2078e26719"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ddf6b27-eef1-41ed-97f4-0614eec13519">
+                    <propertyInstance
+                      Id="4e8a6a96-7c82-4593-8692-222650379039"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-01-08T13:56:59" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '058e5610-c804-477c-b89e-b271e1f34673' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'f233c7d2-e70c-4fab-b851-27f829538e01' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL' -  (Package)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN' -  (Class)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Compute' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Compute::input' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Compute::layerIndex' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::DBN' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::DBN::function' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::DBN::hiddenNeurons' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::DBN::inputCount' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::errCost' -  (Property)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::getAllErrCost' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::getTimeLearn' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Load' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Load::path' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Load::stream' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::OutputCount' -  (Property)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Reconstruct' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Reconstruct::layerIndex' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Reconstruct::output' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Save' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Save::path' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::Save::stream' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::setAllErrCost' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::setAllErrCost::allcosterr' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::setTimeLearn' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::setTimeLearn::time' -  (Parameter)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::stackedRBM' -  (Property)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::StackedRBM' -  (Property)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::timeLearn' -  (Property)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::DBN::UpdateVisibleWeights' -  (Operation)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::Interface' -  (Package)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::Interface::IActivationFunction' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::NeuralNetwork' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::LibDL::RBM' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System' -  (Package)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections' -  (Package)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections::Generic::IList' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections::Generic::IList&lt;RBM‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections::Generic::List&lt;Double‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Collections::Generic::List&lt;RBM‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::IO' -  (Package)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProjectLibDL::System::IO::Stream' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProjectLibDL::LibDL::DBN to ModelingProjectLibDL::System::Collections::Generic::IList&lt;RBM‎&gt; (Association)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProjectLibDL::LibDL::DBN to ModelingProjectLibDL::LibDL::NeuralNetwork (Generalization)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProjectLibDL::System::IO::Stream to ModelingProjectLibDL::System::IDisposable (InterfaceRealization)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProjectLibDL::LibDL::RBM to ModelingProjectLibDL::LibDL::NeuralNetwork (Generalization)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProjectLibDL::System::Collections::Generic::List&lt;RBM‎&gt; to ModelingProjectLibDL::System::Collections::Generic::IList&lt;RBM‎&gt; (InterfaceRealization)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProjectLibDL::LibDL::NeuralNetwork to ModelingProjectLibDL::LibDL::Interface::INeuralNetwork (InterfaceRealization)" />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="High" Text="(10) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2016-01-08T13:57:04" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
