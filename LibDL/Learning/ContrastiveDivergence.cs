@@ -177,15 +177,16 @@ namespace LibDL.Learning
                     var visibleGradient = partial.VBiasGradient;
 
 
+                    // for information: http://www.cs.toronto.edu/~hinton/code/rbm.m
                     // 1. Compute a forward pass. The network is being
                     //    driven by data, so we will gather activations
                     for (int j = 0; j < hidden.Neurons.Length; j++)
                     {
                         probability[j] = hidden.Neurons[j].Compute(observation);  // output probabilities
-                        activations[j] = hidden.Neurons[j].Generate(probability[j]); // state activations
+                        activations[j] = hidden.Neurons[j].Generate(probability[j]); // state activations ==> h0
                     }
 
-                    // 2. Reconstruct inputs from previous outputs
+                    // 2. Reconstruct inputs from previous outputs ==> v1
                     for (int j = 0; j < visible.Neurons.Length; j++)
                         reconstruction[j] = visible.Neurons[j].Compute(activations);
 
@@ -195,7 +196,7 @@ namespace LibDL.Learning
 
                     // 3. Compute outputs for the reconstruction. The network
                     //    is now being driven by reconstructions, so we should
-                    //    gather the output probabilities without sampling
+                    //    gather the output probabilities without sampling ==> h1
                     for (int j = 0; j < hidden.Neurons.Length; j++)
                         reprobability[j] = hidden.Neurons[j].Compute(reconstruction);
 

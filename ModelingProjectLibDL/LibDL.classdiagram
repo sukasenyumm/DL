@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="bc25adaf-ab50-443d-a90e-5bea89ad6d84" name="LibDL" linkedPackageId="cfd1a640-edf0-472a-a5c9-ad9bf9a26c1c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="c4bbab48-6990-4fea-955e-84538ade6c7a">
-      <profileInstance Id="e6475368-1469-43aa-86fb-d518dfd875e2" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c17b0a55-82a2-4f07-ab07-9dc9791d3d6f">
-      <profileInstance Id="50391ea9-aa13-4dfc-9e92-3918ed0b6be1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="85f76c3d-15df-461a-b3ae-09a5bee25ec1">
-      <profileInstance Id="e85751a9-8c70-4422-8d91-cd2f03fa7217" name="CSharpProfile">
-        <elementDefinition Id="94d1df70-8a5a-4622-83d7-1e8c2f108ec9" />
-      </profileInstance>
-      <elementDefinition Id="24822d88-c47b-4657-839e-3b8198e9f8ef" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="5577f073-40cc-44df-81fc-a5d3948250b2" name="ActivationFunction" visibility="Private">
@@ -19611,5 +19591,25 @@
   </packagedElements>
   <package Id="cfd1a640-edf0-472a-a5c9-ad9bf9a26c1c" name="ModelingProjectLibDL">
     <elementDefinition Id="ebc1fda4-1b67-4f5b-8dfc-4e2297c53812" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c4bbab48-6990-4fea-955e-84538ade6c7a">
+        <profileInstance Id="e6475368-1469-43aa-86fb-d518dfd875e2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c17b0a55-82a2-4f07-ab07-9dc9791d3d6f">
+        <profileInstance Id="50391ea9-aa13-4dfc-9e92-3918ed0b6be1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="85f76c3d-15df-461a-b3ae-09a5bee25ec1">
+        <profileInstance Id="e85751a9-8c70-4422-8d91-cd2f03fa7217" name="CSharpProfile">
+          <elementDefinition Id="94d1df70-8a5a-4622-83d7-1e8c2f108ec9" />
+        </profileInstance>
+        <elementDefinition Id="24822d88-c47b-4657-839e-3b8198e9f8ef" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

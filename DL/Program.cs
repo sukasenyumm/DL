@@ -67,7 +67,8 @@ namespace DL
                 menu = int.Parse(Console.ReadLine());
                 if (menu == 1)
                 {
-                    file = @"D:\data_mnist_train.bin";
+                    //file = @"D:\data_mnist_train.bin";
+                    file = @"D:\train300.bin";
                 }
                 else if (menu == 2)
                 {
@@ -143,7 +144,7 @@ namespace DL
                     PreTraining(DBNNet, inputs, epoch, mb, lr, mm, dc, fileModelSimpan);
                     //Training(DBNNet, inputs, outputs, epoch2, 100, 0.5, 0.5, fileModelSimpan, false);
                     begin = begin+" End-PT: "+ DateTime.Now.ToLongTimeString();
-                    //DBNNet = DBN.Load(@"D:\embuhRBM_2");
+                   // DBNNet = DBN.Load(@"D:\GAGAL\31RBM_2");
                     //DBNNet.SetActivationFunction(new LibDL.ActivationFunction.SigmoidFunction(0.01));
                     Training(DBNNet, inputs, outputs, epoch2, mb2, lr2, mm2, fileModelSimpan, isRprop);
                     begin = begin + " End-T: " + DateTime.Now.ToLongTimeString();
@@ -170,7 +171,6 @@ namespace DL
 
                     CreateNetwork(inputs.First().Length, outputs.First().Length,false);
                     Training(NNet, inputs, outputs, epoch2, mb2, lr2, mm2, fileModelSimpan, isRprop);
-                    begin = begin + " End-T: " + DateTime.Now.ToLongTimeString(); 
 
                     NNet.setTimeLearn(begin);
                     NNet.setAllErrCost(errCostFunc);
@@ -551,6 +551,7 @@ namespace DL
 
             var cd = teacher.GetLayerAlgorithm(teacher.LayerIndex);
 
+            ReconstructImage rs;
             // Unsupervised learning on each hidden layer, except for the output layer.
             for (int layerIndex = 0; layerIndex < network.StackedRBM.Count - 1; layerIndex++)
             {
@@ -567,7 +568,16 @@ namespace DL
                     }
                     //Breakpoint here to debug
 #if DEBUG_RECONSTRUCTED
-                    ReconstructImage.Delete(@"D:\reconstruct");
+                    if (i == 99 || i == 199 || i==299)
+                    {
+                        if (System.IO.File.Exists(@"D:\reconstruct"))
+                            try { File.Copy(@"D:\reconstruct", @"D:\reconstruct_epoch" + layerIndex + "_" + i, true); }
+                            finally { }             
+                    }
+                    else
+                    {
+                        ReconstructImage.Delete(@"D:\reconstruct");
+                    }
 #endif
                 }
                 network.Save(@fileModelSimpan+"RBM_"+(layerIndex+1));
